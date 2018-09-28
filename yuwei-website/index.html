@@ -1,23 +1,610 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>index</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/logo.css">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="keywords" content="任天堂,任天堂台灣,Nintendo Hong Kong,Nintendo Switch,主機,特徵">
+  <meta name="description" content="介紹Nintendo Switch的資訊。">
+  <title>Gu Tong Jing｜股潼京</title>
+  <!-- ogp -->
+  <meta property="og:title" content="Nintendo Switch｜Nintendo">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="介紹Nintendo Switch的資訊。">
+  <meta property="og:url" content="http://nintendo.com.hk/hardware/switch/index.html">
+  <meta property="og:site_name" content="股潼京網頁(台灣)">
+  <!-- //ogp -->
+  <link rel="stylesheet" href="css/gcommon_content.css">
+  <script src="js/nocommon_content.js"></script>
+  <link rel="stylesheet" href="css/hardware.css">
+  <script src="js/hardware.js"></script>
+  <link rel="stylesheet" href="css/local.css">
+  <script src="js/local.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <!-- ncommon global header/footer start -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:,400,700,900">
+  <link rel="stylesheet" href="css/gcommon_shared.css">
+  <link rel="stylesheet" href="../../common/v2/css/ncommon_shared_nhl.css">
+  <script src="js/nocommon_shared.js"></script>
+  <link rel="stylesheet" href="css/header_only.css">
+
+  <style>
+    @media screen and (min-width: 980px) {
+    .local-joycon__controllerTextHead {
+      height: 47px;
+    }
+  } 
+  @media screen and (min-width: 760px) and (max-width: 979px) {
+    .local-joycon__controllerTextHead {
+      height: 35px;
+    }
+  }
+
+  .footer-topic-path-back-to-top {
+    background-image: none;
+  }
+
+  @media screen and (max-width: 979px) {
+    .footer-topic-path .topic-path-top > a > span:before {
+      display: none;
+    }
+  }
+
+  </style>
 </head>
 
 <body>
-  <div class="l-logo-Fatwarrior">
-    <p class="logo-fatwarrior">
-      <a href="#" class="logoFatwarrior_item">
-        <img src="" alt="">
-      </a>
-    </p>
+
+  <div class="l-logo-Nintendo">
+    <p class="logo-nintendo"><a href="../../index.htm" class="logoNintendo__item"><img src="assets/img/common/logo.svg"
+          alt=""></a></p>
   </div>
+
+  <!-- <div id="ncommon-ghdr-header"> -->
+  <!--   <div class="ncommon-ghdr-header-account"></div> -->
+  <!--   <noscript> -->
+  <!--     <div class="ncommon-ghdr-header-logo"><a href="http://www.nintendo.com.hk/index.html">NINTENDO</a></div> -->
+  <!--   </noscript> -->
+  <!-- </div> -->
+
+  <div data-njs="scrollpage" data-noscroll_game="1">
+    <!-- コンテンツ0: トップ -->
+    <div data-njs="scrollpage__content"></div>
+    <div data-njs="parallax">
+      <div class="local-hero__outer" data-njs="parallax__item" style="position: relative;">
+        <div class="local-hero" id="local-hero" data-njs="parallax__item">
+          <div class="local-hero__pics">
+            <div class="local-hero__pic local-hero__pic-1"></div>
+            <div class="local-hero__pic local-hero__pic-2"></div>
+            <div class="local-hero__pic local-hero__pic-3"></div>
+            <div class="local-hero__pic local-hero__pic-4"></div>
+            <div class="local-hero__pic local-hero__pic-5"></div>
+            <div class="local-hero__pic local-hero__pic-6"></div>
+          </div>
+          <div class="local-hero__red">
+            <div class="local-hero__redInner"></div>
+          </div>
+          <a href="../../software/switch/index.html" class="local-hero__linkSoft ncommon-u-hide-pc ncommon-u-hide-tab">遊戲軟體</a>
+        </div>
+
+        <div class="local-hero__logo js-visible"></div>
+        <div class="local-hero__heading-text"></div>
+        <div data-njs="sticky" data-bottom=".local-menu" data-navigation="1" class="local-navi-sticky">
+          <div data-njs="sticky__inner" class="local-navi-sticky__inner">
+            <div id="local-navi-switch" class="local-navi-switch">
+              <div class="local-navi-switch__listWrap">
+                <ul class="local-navi-switch__list">
+                  <li id="local-navi-switch__item--index" class="local-navi-switch__item"><a href="#" data-njs="smoothscroll"
+                      data-target="#local-gallery__anchorPoint--index">特徵</a></li>
+                  <li class="local-navi-switch__item"><a href="./specs/">功能/規格</a></li>
+                  <li class="local-navi-switch__item"><a href="../../software/switch/">遊戲軟體一覽</a></li>
+                  <li class="local-navi-switch__item"><a href="./accessories/">周邊設備</a></li>
+                  <li class="local-navi-switch__item"><a href="./parentalcontrols/">Nintendo Switch™ Parental Controls</a></li>
+                  <li class="local-navi-switch__item local-navi-switch__link local-navi-switch__link--tabSp"><a href="../../software/switch/">遊戲軟體</a></li>
+                </ul>
+                <div class="local-navi-switch__link local-navi-switch__link--pc"><a href="../../software/switch/">遊戲軟體</a></div>
+              </div>
+              <div class="ncommon-u-hide-pc ncommon-u-hide-tab">
+                <div class="ncommon-sheader-switch__arrow local-navi-switch__arrow">&nbsp;</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /local-hero__outer -->
+
+      <div class="local-wrapper">
+
+        <div class="local-gallery">
+          <div class="local-headline local-headline--gallery" id="local-gallery__anchorPoint--index">
+            <!-- コンテンツ1: コンセプト -->
+            <div data-njs="scrollpage__content"></div>
+            <div data-njs="slider" data-repeat="1" data-automove="1">
+              <div data-njs="slider__clip">
+                <div data-njs="slider__container">
+                  <div data-njs="slider__item" class="local-gallery__slideItem" style="background-image:url(img/02-gallery/img-01.jpg);"></div>
+                  <div data-njs="slider__item" class="local-gallery__slideItem" style="background-image:url(img/02-gallery/img-02.jpg);"></div>
+                  <div data-njs="slider__item" class="local-gallery__slideItem" style="background-image:url(img/02-gallery/img-03.jpg);"></div>
+                  <div data-njs="slider__item" class="local-gallery__slideItem" style="background-image:url(img/02-gallery/img-04.jpg);"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ncommon-l-full">
+            <div data-njs="slidergallery">
+              <div class="local-gallery__content" data-njs="parallax__item">
+                <div class="ncommon-l-full">
+                  <div class="local-gallery__inner">
+                    <div class="local-gallery__subheadline">改變形態 可帶到任何地方</div>
+                    <div class="local-gallery__txt">Nintendo Switch™是一部可配合不同場合而改變形態的遊戲機。<br>隨時隨地自由享樂。</div>
+                  </div>
+                </div>
+              </div>
+              <div data-njs="slidergallery__bg"></div>
+              <div data-njs="slidergallery__body">
+                <div class="slider__inner">
+                  <div data-njs="slider" data-autoplay="0" data-autoplayinterval="4000" data-repeat="1">
+                    <div data-njs="slider__clip">
+                      <div data-njs="slider__container">
+                        <div data-njs="slider__item"><img src="img/02-gallery/img-slider-01-pc_tab.jpg" alt="手にすっぽり収まるホールド感"><img
+                            src="img/02-gallery/img-slider-01-sp.jpg" alt="手にすっぽり収まるホールド感"></div>
+                        <div data-njs="slider__item"><img src="img/02-gallery/img-slider-02-pc_tab.jpg" alt="分離するコントローラー"><img
+                            src="img/02-gallery/img-slider-02-sp.jpg" alt="分離するコントローラー"></div>
+                        <div data-njs="slider__item"><img src="img/02-gallery/img-slider-03-pc_tab.jpg" alt="Joy-Conを本体にセット"><img
+                            src="img/02-gallery/img-slider-03-sp.jpg" alt="Joy-Conを本体にセット"></div>
+                        <div data-njs="slider__item"><img src="img/02-gallery/img-slider-04-pc_tab.jpg" alt="本体をドックアウト"><img
+                            src="img/02-gallery/img-slider-04-sp.jpg" alt="本体をドックアウト"></div>
+                      </div>
+                    </div>
+                    <div class="ncommon-pager ncommon-pager--sliderBt switch-pager">
+                      <div class="ncommon-pager__prev" data-njs="slider__prev"><i><i><i></i><i></i><i></i></i>
+                        </i>
+                      </div>
+                      <div class="ncommon-pager__nav ncommon-pager__nav--sliderBts" data-njs="slider__nav">
+                        <div class="ncommon-pager__sliderBt" data-njs="slider__navItem">
+                          <div class="ncommon-pager__sliderTimer" data-njs="slider__navItemTimer"></div>
+                        </div>
+                      </div>
+                      <div class="ncommon-pager__next" data-njs="slider__next"><i><i><i></i><i></i><i></i></i>
+                        </i>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-njs="slidergallery__closer" class="ncommon-iconRect--close"><i class="ncommon-icon"
+                      data-shape="close"><i><i></i></i>
+                    </i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="local-playStyle">
+        <!-- コンテンツ2: プレイスタイル -->
+        <div data-njs="scrollpage__content"></div>
+        <div class="local-playStyle__headline" data-njs="parallax__item">
+          <div class="local-playStyle__headlineBgWrap">
+            <div class="local-playStyle__headlineBg local-playStyle__headlineBg--left"></div>
+            <div class="local-playStyle__headlineBg local-playStyle__headlineBg--right"></div>
+            <div class="local-playStyle__headlineBg local-playStyle__headlineBg--center"></div>
+          </div>
+          <div class="local-playStyle__headlineTextWrap">
+            <div class="local-playStyle__headlineText local-playStyle__headlineText--en">Nintendo Switch</div>
+            <div class="local-playStyle__headlineText local-playStyle__headlineText--jp">3種遊玩模式</div>
+          </div>
+        </div>
+        <div class="local-mode">
+          <div class="ncommon-l-full">
+            <div class="local-mode__item">
+              <div data-njs="parallax__item" data-parallaxdelay="0" class="local-mode__squarePics">
+                <div data-njs="switcher" data-initialnum="-1" data-autoplay="1" data-effect="wipe" data-parallaxtrigger="1"
+                  data-disable_game="true">
+                  <div data-njs="switcher__container" class="local-mode__picWrap">
+                    <div data-njs="switcher__content" class="local-mode__pic" style="background-image:url(img/04-02-mode/tv.jpg)"></div>
+                  </div>
+                </div>
+              </div>
+              <div data-njs="parallax__item" class="local-mode__rectPics">
+                <div data-njs="switcher" data-initialnum="-1" data-autoplay="1" data-effect="wipe" data-parallaxtrigger="1"
+                  data-disable_game="true">
+                  <div data-njs="switcher__container" class="local-mode__picWrap">
+                    <div data-njs="switcher__content" class="local-mode__pic" style="background-image:url(img/04-02-mode/tv_sp.jpg)"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="local-mode__headline">
+                <div class="local-mode__headlineJp"><img src="img/04-02-mode/h-01-jp.svg" alt="TV模式"></div>
+                <div class="local-mode__headlineEn"><img src="img/04-02-mode/h-01-en.svg" alt="TV Mode"></div>
+              </div>
+              <div class="local-mode__lead">
+                <img src="img/04-02-mode/lead-01.svg" alt="透過電視的大畫面 大家一起盡情享樂">
+                <p class="local-mode__lead__device-font">透過電視的大畫面<br>大家一起盡情享樂</p>
+              </div>
+              <div class="local-mode__text">透過連接電視畫面，無論大人或小朋友都可一起遊玩的遊戲，集合朋友或開派對最適合不過。</div>
+            </div>
+            <div class="local-mode__item">
+              <div data-njs="parallax__item" data-parallaxdelay="250" class="local-mode__squarePics">
+                <div data-njs="switcher" data-initialnum="-1" data-autoplay="1" data-effect="wipe" data-parallaxtrigger="1"
+                  data-disable_game="true">
+                  <div data-njs="switcher__container" class="local-mode__picWrap">
+                    <div data-njs="switcher__content" class="local-mode__pic" style="background-image:url(img/04-02-mode/table.jpg)"></div>
+                  </div>
+                </div>
+              </div>
+              <div data-njs="parallax__item" class="local-mode__rectPics">
+                <div data-njs="switcher" data-initialnum="-1" data-autoplay="1" data-effect="wipe" data-parallaxtrigger="1"
+                  data-disable_game="true">
+                  <div data-njs="switcher__container" class="local-mode__picWrap">
+                    <div data-njs="switcher__content" class="local-mode__pic" style="background-image:url(img/04-02-mode/table_sp.jpg)"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="local-mode__headline">
+                <div class="local-mode__headlineJp"><img src="img/04-02-mode/h-02-jp.svg" alt="桌上模式"></div>
+                <div class="local-mode__headlineEn"><img src="img/04-02-mode/h-02-en.svg" alt="Tabletop Mode"></div>
+              </div>
+              <div class="local-mode__lead">
+                <img src="img/04-02-mode/lead-02.svg" alt="分享畫面 縮短距離">
+                <p class="local-mode__lead__device-font">分享畫面<br>縮短距離</p>
+              </div>
+              <div class="local-mode__text">將主機背面的支架拉出，即使在沒有電視的地方，和朋友分享「Joy-Con™」和畫面即可進行對戰或協力遊戲。</div>
+            </div>
+            <div class="local-mode__item">
+              <div data-njs="parallax__item" data-parallaxdelay="500" class="local-mode__squarePics">
+                <div data-njs="switcher" data-initialnum="-1" dasta-autoplay="1" data-effect="wipe"
+                  data-parallaxtrigger="1" data-disable_game="true">
+                  <div data-njs="switcher__container" class="local-mode__picWrap">
+                    <div data-njs="switcher__content" class="local-mode__pic" style="background-image:url(img/04-02-mode/hh.jpg)"></div>
+                  </div>
+                </div>
+              </div>
+              <div data-njs="parallax__item" class="local-mode__rectPics">
+                <div data-njs="switcher" data-initialnum="-1" data-autoplay="1" data-effect="wipe" data-parallaxtrigger="1"
+                  data-disable_game="true">
+                  <div data-njs="switcher__container" class="local-mode__picWrap">
+                    <div data-njs="switcher__content" class="local-mode__pic" style="background-image:url(img/04-02-mode/hh_sp.jpg)"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="local-mode__headline">
+                <div class="local-mode__headlineJp"><img src="img/04-02-mode/h-03-jp.svg" alt="手提模式"></div>
+                <div class="local-mode__headlineEn"><img src="img/04-02-mode/h-03-en.svg" alt="Handheld Mode"></div>
+              </div>
+              <div class="local-mode__lead">
+                <img src="img/04-02-mode/lead-03.svg" alt="攜帶高畫質的 大螢幕外出">
+                <p class="local-mode__lead__device-font">攜帶高畫質的<br>大螢幕外出</p>
+              </div>
+              <div class="local-mode__text">將和電視畫面一樣的遊戲體驗帶到手中，無論何時何地也可享受超越手提遊戲機概念的遊戲。</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- コンテンツ3: マルチプレイ -->
+        <div data-njs="scrollpage__content"></div>
+        <div class="local-playStyle__content" data-njs="parallax__item">
+          <div class="local-playStyle__contentInner">
+            <div class="local-playStyle__switcher" data-njs="switcher" data-initialnum="-1" data-autoplay="1"
+              data-parallaxtrigger="1" data-disable_game="true">
+              <div data-njs="switcher__container">
+                <div data-njs="switcher__content" class="local-playStyle__switcherConttent" style="background-image:url(img/05-02-world/ph.jpg)"></div>
+              </div>
+            </div>
+            <div class="local-playStyle__texts" style="font-weight: bold;">
+              <div class="local-playStyle__textArea">
+                <div class="local-playStyle__subheadline">
+                  <img src="img/05-02-world/subheadline01-pc.png" alt="最多連接8台的複數遊戲" width="100%">
+                  <img src="img/05-02-world/subheadline01-sp.png" alt="最多連接8台的複數遊戲" width="100%">
+                  <p class="local-playStyle__subheadline__device-font">最多連接8台的複數遊戲</p>
+                </div>
+                <div class="local-playStyle__text">『Splatoon2』或『瑪利歐賽車8 豪華版』等，只要有主機，就可利用鄰近主機通訊連接最多8台進行對戰或協力等複數遊戲。</div>
+              </div>
+              <div class="local-playStyle__textArea">
+                <div class="local-playStyle__subheadline">
+                  <img src="img/05-02-world/subheadline02-pc.png" alt="透過網路連接" width="100%">
+                  <img src="img/05-02-world/subheadline02-sp.png" alt="透過網路連接" width="100%">
+                  <p class="local-playStyle__subheadline__device-font">透過網路連接</p>
+                </div>
+                <div class="local-playStyle__text">加入「Nintendo Switch」專用網上服務(付費)※，也可和遠方的朋友或全世界的玩家進行對戰及協力遊戲。
+                  與智慧型手機專用應用程式進行連動，可和朋友約見，也可一邊進行話音聊天，一邊玩遊戲。</div>
+                <div class="local-playStyle__notes"><a href="../../switch/support/internet/">※台灣地區的「Nintendo
+                    Switch」專用網上服務投入日期未定</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- コンテンツ4: Joy-Con -->
+        <div data-njs="scrollpage__content"></div>
+        <div class="local-joycon" id="joycon">
+          <div class="local-joycon__title">
+            <div class="local-joycon__titleImgs" data-njs="parallax__item">
+              <div class="local-joycon__titleImg local-joycon__titleImg--01"><img src="img/05-joycon/title_joycon01.png"
+                  alt=""></div>
+              <div class="local-joycon__titleImg local-joycon__titleImg--02"><img src="img/05-joycon/title_joycon02.png"
+                  alt=""></div>
+            </div>
+            <div class="local-joycon__title__text01" data-njs="parallax__item"><img src="img/05-joycon/title_text01.png"
+                alt="Joy-Con"></div>
+            <div class="local-joycon__title__text02 ncommon-u-hide-sp" data-njs="parallax__item"><img src="img/05-joycon/title_text02_pc.png"
+                alt="Nintendo Switch的控制器"></div>
+            <div class="local-joycon__title__text02 ncommon-u-hide-pc ncommon-u-hide-tab" data-njs="parallax__item"><img
+                src="img/05-joycon/title_text02_sp.png" alt="Nintendo Switch的控制器"></div>
+            <div class="local-joycon__title__text03" data-njs="parallax__item">「Nintendo Switch」附有控制器「Joy-Con」左右各一。</div>
+          </div>
+          <div class="local-joycon__grip ncommon-l-full">
+            <div class="local-joycon__gripInner">
+              <div class="local-joycon__gripImg"></div>
+              <div class="local-joycon__gripText">
+                <div class="local-joycon__gripTextInner">將左右Joy-Con安裝到握把，雙手握著像一般的控制器，從握把取下，即變成「2個」獨立的控制器。</div>
+              </div>
+            </div>
+          </div>
+          <div class="local-joycon__controller">
+            <div class="local-joycon__controllerInner ncommon-l-full">
+              <div class="local-joycon__controllerText">
+                <div class="local-joycon__controllerTextHead">分享樂趣</div>
+                <p>將一個Joy-Con分享給對方，無論何時何地都可進行對戰和協力遊戲。</p>
+              </div>
+            </div>
+          </div>
+          <div class="local-joycon__garelly">
+            <div class="local-joycon__garelly__inner ncommon-l-full ncommon-u-hide-sp">
+              <div data-njs="parallax__item" class="local-joycon__garelly__panel local-joycon__garelly__panel_bg local-joycon__garelly__panel--pc5-1 shape-square is-bg-wipeV">
+                <div class="local-joycon__garelly__panel_bg-image" style="background-image:url(img/05-joycon/pic_01.jpg)"></div>
+              </div>
+              <div data-njs="parallax__item" class="local-joycon__garelly__panel local-joycon__garelly__panel_bg local-joycon__garelly__panel--pc5-2 shape-rectangle-side-l is-bg-wipeH">
+                <div class="local-joycon__garelly__panel_bg-image" style="background-image:url(img/05-joycon/pic_02.jpg)"></div>
+              </div>
+              <div class="local-joycon__garelly__panel local-joycon__garelly__panel__1by1 local-joycon__garelly__panel--pc5-3 local-joycon__garelly__panel--sp2 local-joycon__garelly__panel--text">
+                <div class="local-joycon__garelly__panel--textInner">
+                  <p>除了直握、橫握，也有雙手各握一個操作或雙手握著的玩法。</p>
+                  <p>裝上附屬的「Joy-Con腕帶」，就可以將腕帶戴上手腕上，體驗動感操作。<br>此外，橫握控制器時也可輕易操作SL/SR鍵。</p>
+                </div>
+              </div>
+              <div data-njs="parallax__item" class="local-joycon__garelly__panel local-joycon__garelly__panel_bg local-joycon__garelly__panel--pc5-4 shape-square is-bg-wipeV">
+                <div class="local-joycon__garelly__panel_bg-image" style="background-image:url(img/05-joycon/pic_03.jpg)"></div>
+              </div>
+              <div data-njs="parallax__item" class="local-joycon__garelly__panel local-joycon__garelly__panel_bg local-joycon__garelly__panel--pc5-5 shape-square is-bg-wipeH">
+                <div class="local-joycon__garelly__panel_bg-image" style="background-image:url(img/05-joycon/pic_04.jpg)"></div>
+              </div>
+              <div data-njs="parallax__item" class="local-joycon__garelly__panel local-joycon__garelly__panel_bg local-joycon__garelly__panel--pc5-6 shape-rectangle-length is-bg-wipeV">
+                <div class="local-joycon__garelly__panel_bg-image" style="background-image:url(img/05-joycon/pic_05.jpg)"></div>
+              </div>
+              <div data-njs="parallax__item" class="local-joycon__garelly__panel local-joycon__garelly__panel_bg local-joycon__garelly__panel--pc5-7 shape-square is-bg-wipeV">
+                <div class="local-joycon__garelly__panel_bg-image" style="background-image:url(img/05-joycon/pic_06.jpg)"></div>
+              </div>
+              <div data-njs="parallax__item" class="local-joycon__garelly__panel local-joycon__garelly__panel_bg local-joycon__garelly__panel--pc5-8 shape-rectangle-side is-bg-wipeH">
+                <div class="local-joycon__garelly__panel_bg-image" style="background-image:url(img/05-joycon/pic_07.jpg)"></div>
+              </div>
+              <div data-njs="parallax__item" class="local-joycon__garelly__panel local-joycon__garelly__panel_bg local-joycon__garelly__panel--pc5-9 shape-rectangle-side is-bg-wipeH">
+                <div class="local-joycon__garelly__panel_bg-image" style="background-image:url(img/05-joycon/pic_08.jpg)"></div>
+              </div>
+            </div>
+            <div class="local-joycon__garelly__inner ncommon-l-full ncommon-u-hide-pc ncommon-u-hide-tab">
+              <div data-njs="parallax__item" class="local-joycon__garelly__panel local-joycon__garelly__panel--sp2 is-wipeV">
+                <img src="img/05-joycon/pic_01_sp.jpg" alt="">
+              </div>
+              <div data-njs="parallax__item" class="local-joycon__garelly__panel local-joycon__garelly__panel--sp3 local-joycon__garelly__panel--spRight is-wipeH">
+                <img src="img/05-joycon/pic_02_sp.jpg" alt="">
+              </div>
+              <div data-njs="parallax__item" class="local-joycon__garelly__panel local-joycon__garelly__panel--sp3 local-joycon__garelly__panel--spRight is-wipeV">
+                <img src="img/05-joycon/pic_03_sp.jpg" alt="">
+              </div>
+              <div data-njs="parallax__item" class="local-joycon__garelly__panel local-joycon__garelly__panel--sp1 is-wipeH">
+                <img src="img/05-joycon/pic_04_sp.jpg" alt="">
+              </div>
+              <div class="local-joycon__garelly__panel local-joycon__garelly__panel__1by1 local-joycon__garelly__panel--sp1 local-joycon__garelly__panel--text">
+                <p>除了直握、橫握，也有雙手各握一個操作或雙手握著的玩法。</p>
+                <p>裝上附屬的「Joy-Con腕帶」，就可以將腕帶戴上手腕上，體驗動感操作。<br>此外，橫握控制器時也可輕易操作SL/SR鍵。</p>
+              </div>
+              <div data-njs="parallax__item" class="local-joycon__garelly__panel local-joycon__garelly__panel--sp1 is-wipeV">
+                <img src="img/05-joycon/pic_05_sp.jpg" alt="">
+              </div>
+              <div data-njs="parallax__item" class="local-joycon__garelly__panel local-joycon__garelly__panel--sp2 local-joycon__garelly__panel--spRight is-wipeH">
+                <img src="img/05-joycon/pic_08_sp.jpg" alt="">
+              </div>
+              <div data-njs="parallax__item" class="local-joycon__garelly__panel local-joycon__garelly__panel--sp3 is-wipeV">
+                <img src="img/05-joycon/pic_06_sp.jpg" alt="">
+              </div>
+              <div data-njs="parallax__item" class="local-joycon__garelly__panel local-joycon__garelly__panel--sp3 is-wipeH">
+                <img src="img/05-joycon/pic_07_sp.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div id="local-world" class="local-world">
+            <div class="local-world__inner ncommon-l-full">
+              <div class="local-world__headline"><span>「Joy-Con」主導的<br class="local-gamebrowser__br--sp">全新娛樂世界</span></div>
+              <div class="local-world__list">
+                <div class="local-world__item">
+                  <div class="local-world__lead"><span>從震動到觸感</span></div>
+                  <div class="local-world__text local-world__hd">搖動「Joy-Con」，即可感受其細膩真實的觸感。「Joy-Con」內置的「HD震動」，將在影像和音響無法感受的臨場感加進遊戲裡。</div>
+                </div>
+                <div class="local-world__item">
+                  <div class="local-world__lead"><span>讀取物件的形狀、動作和距離 </span></div>
+                  <div class="local-world__text local-world__ir">
+                    <p>「Joy-Con(R)」內置的「動感IR照相機」會讀取照相機捕捉的物件形狀、動作和距離。</p>
+                    <p>例如可辨識剪頭布的手勢，是目前為止沒有的獨特輸入操作。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="local-footVisual"></div>
+
+        <!-- コンテンツ5: メニュー -->
+        <div data-njs="scrollpage__content"></div>
+        <div class="local-menu">
+          <div class="local-menu__inner">
+            <img class="local-menu__logo" src="../../common/v2/img/ncommon/_common/logo/switch-white.svg" alt="Nintendo Switch">
+            <div class="local-menu__section local-menu__videos">
+              <ul class="local-menu__video">
+                <li>
+                  <a href="javascript:void(0);" data-njs="gallery" data-group="movie01" data-type="MOVIE" data-videoid="Jj4sfry-wYw">
+                    <img src="img/06-menu/btnMovie01.jpg" alt="Nintendo Switch概念影片">
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);" data-njs="gallery" data-group="movie02" data-type="MOVIE" data-videoid="f5uik5fgIaI">
+                    <img src="img/06-menu/btnMovie02.jpg" alt="First Look at Nintendo Switch">
+                  </a>
+                </li>
+              </ul>
+            </div><!-- /.local-menu__videos -->
+            <ul class="local-menu__section local-menu__menu">
+              <li>
+                <a href="./lineup/">
+                  <img src="img/06-menu/btn01.jpg" alt="主機介紹" class="ncommon-u-hide-sp">
+                  <img src="img/06-menu/btn01_sp.jpg" alt="主機介紹" class="ncommon-u-hide-pc ncommon-u-hide-tab">
+                  <p class="local-menu__link">主機介紹</p>
+                </a>
+              </li>
+              <li>
+                <a href="./specs/">
+                  <img src="img/06-menu/btn02.jpg" alt="功能/規格">
+                  <p class="local-menu__link">功能/規格</p>
+                </a>
+              </li>
+              <li>
+                <a href="./accessories/">
+                  <img src="img/06-menu/btn03.jpg" alt="周邊設備">
+                  <p class="local-menu__link">周邊設備</p>
+                </a>
+              </li>
+              <li>
+                <a href="./parentalcontrols/">
+                  <img src="img/06-menu/btn04.jpg" alt="Nintendo Switch™ Parental Controls">
+                  <p class="local-menu__link">Nintendo Switch™ Parental Controls</p>
+                </a>
+              </li>
+            </ul>
+            <!-- /.local-menu__menu -->
+          </div>
+          <!-- /.local-menu__inner -->
+        </div>
+        <!-- /.local-menu -->
+
+        <!-- コンテンツ6: その他 -->
+        <div data-njs="scrollpage__content"></div>
+        <div class="local-software">
+          <div class="local-software-size"></div>
+          <a href="../../software/switch/index.html" class="local-software__linkbox">
+            <div class="local-software__titleArea">
+              <div class="local-software__textWrap">
+                <p class="local-software__title"><img src="img/07-software/soft_title.png" alt=""></p>
+                <p class="local-software__subTitle"><img src="img/07-software/soft_sub_title.png" alt=""></p>
+              </div>
+            </div>
+            <div data-njs="slider" data-repeat="1" data-automove="1" data-cancelgame="1" class="local-software__slide">
+              <div data-njs="slider__clip">
+                <div data-njs="slider__container" class="local-software__slideContainer">
+                  <div data-njs="slider__item" class="local-software__slideItem" style="background-image:url(img/07-software/soft_thumb01.jpg);"></div>
+                  <div data-njs="slider__item" class="local-software__slideItem" style="background-image:url(img/07-software/soft_thumb02.jpg);"></div>
+                  <div data-njs="slider__item" class="local-software__slideItem" style="background-image:url(img/07-software/soft_thumb03.jpg);"></div>
+                  <div data-njs="slider__item" class="local-software__slideItem" style="background-image:url(img/07-software/soft_thumb04.jpg);"></div>
+                  <div data-njs="slider__item" class="local-software__slideItem" style="background-image:url(img/07-software/soft_thumb05.jpg);"></div>
+                  <div data-njs="slider__item" class="local-software__slideItem" style="background-image:url(img/07-software/soft_thumb06.jpg);"></div>
+                  <div data-njs="slider__item" class="local-software__slideItem" style="background-image:url(img/07-software/soft_thumb07.jpg);"></div>
+                  <div data-njs="slider__item" class="local-software__slideItem" style="background-image:url(img/07-software/soft_thumb08.jpg);"></div>
+
+                </div>
+              </div>
+            </div>
+            <div class="local-software__bt">
+              <div class="local-software__bt-inner">
+                <img src="img/07-software/soft_bt.png" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- /.local-software -->
+      </div>
+
+      <div data-njs="nav" data-scrollpagenav="1" class="local-scrollPageNav">
+        <div class="local-scrollPageNav__inner">
+          <div data-njs="nav__item" class="local-scrollPageNav__item"><span>Top</span></div>
+          <div data-njs="nav__item" class="local-scrollPageNav__item"><span>Switch and Play</span></div>
+          <div data-njs="nav__item" class="local-scrollPageNav__item"><span>Play Mode</span></div>
+          <div data-njs="nav__item" class="local-scrollPageNav__item"><span>Multi-play</span></div>
+          <div data-njs="nav__item" class="local-scrollPageNav__item"><span>Joy-Con&trade;</span></div>
+        </div>
+      </div>
+    </div>
+    <!-- NCONTENTS: END -->
+    <div class="l-footer-topic-path">
+      <div class="l-footer-topic-path-inner">
+        <div class="footer-topic-path">
+          <ul class="topic-path">
+            <li class="topic-path-item topic-path-top"><a href="../../index.htm"><span>任天堂官方網頁(台灣)</span></a></li>
+            <li class="topic-path-item"><a href="./index.html"><span>Nintendo Switch</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-topic-path-back-to-top">
+          <a href="#top" class="footer-topic-path-back-to-top-btn"><span><i class="ico-footer-topic-path-back-to-top"></i></span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-footer-topic-path">
+      <div class="l-footer-topic-path-inner">
+        <footer class="is_event_index l-footer-event">
+          <div class="footer">
+            <ul class="footer-link">
+              <li><a href="../../index.htm"><span class="footer-link__arrow"><i class="ico_arrow"><svg class="ico">
+                        <use xlink:href="#ico_arrow"></use>
+                      </svg></i></span><span class="footer-link__text">任天堂官方網頁(台灣)</span></a></li>
+              <li><a href="../../pressrelease/switch_20170113.html"><span class="footer-link__arrow"><i class="ico_arrow"><svg
+                        class="ico">
+                        <use xlink:href="#ico_arrow"></use>
+                      </svg></i></span><span class="footer-link__text">Press Release</span></a></li>
+              <li><a href="../../switch/support/"><span class="footer-link__arrow"><i class="ico_arrow"><svg class="ico">
+                        <use xlink:href="#ico_arrow"></use>
+                      </svg></i></span><span class="footer-link__text">技術支援</span></a></li>
+              <li><a href="../../switch/repair.html"><span class="footer-link__arrow"><i class="ico_arrow"><svg class="ico">
+                        <use xlink:href="#ico_arrow"></use>
+                      </svg></i></span><span class="footer-link__text">聯絡查詢</span></a></li>
+              <li><a href="./store/"><span class="footer-link__arrow"><i class="ico_arrow"><svg class="ico">
+                        <use xlink:href="#ico_arrow"></use>
+                      </svg></i></span><span class="footer-link__text">銷售店舖一覽</span></a></li>
+
+            </ul>
+            <ul class="footer-sns">
+              <li>
+                <p class="footer-copyright">© Nintendo</p>
+              </li>
+            </ul>
+
+          </div>
+        </footer>
+
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        var toTop = document.querySelector('.footer-topic-path-back-to-top-btn');
+        toTop.addEventListener('click', function (e) {
+          e.preventDefault();
+          window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+          return false;
+        }, false);
+      })()
+    </script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-5796867-1']);
+      _gaq.push(['_trackPageview']);
+      (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
 
 </body>
 

@@ -1,0 +1,2084 @@
+@font-face {
+    font-family: "ncommonJp";
+    font-weight: normal;
+    src: local("YuGothic-Medium"), local("Yu Gothic Medium"), local("YuGothic-Regular")
+}
+
+@font-face {
+    font-family: "ncommonJp";
+    font-weight: bold;
+    src: local("YuGothic-Bold"), local("Yu Gothic")
+}
+
+.hard-anchor--inline {
+    text-align: center;
+}
+
+@media screen and (min-width:760px),
+print {
+    .hard-anchor--inline {
+        font-size: 0;
+        letter-spacing: -.5em;
+        padding: 28px 0
+    }
+    .hard-anchor--inline .hard-anchor__item {
+        display: inline-block;
+        font-size: 14px;
+        letter-spacing: normal;
+        vertical-align: top;
+    }
+    .hard-anchor--inline .hard-anchor__item:not(:last-child) {
+        padding-right: 92px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-anchor--inline {
+        padding: 21px 0;
+        display: table;
+        table-layout: fixed;
+        width: 100%
+    }
+    .hard-anchor--inline .hard-anchor__item {
+        display: table-cell;
+        vertical-align: top
+    }
+}
+
+.hard-anchor__itemInner {
+    cursor: pointer
+}
+
+.hard-anchor__logo {
+    background-repeat: no-repeat;
+    background-position: center center;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    opacity: 1;
+    -webkit-transition: opacity 150ms linear;
+    -moz-transition: opacity 150ms linear;
+    -o-transition: opacity 150ms linear;
+    transition: opacity 150ms linear;
+}
+
+@media screen and (min-width:760px),
+print {
+    .hard-anchor__logo {
+        width: 132px;
+        height: 32px;
+        margin: 0 auto 7px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-anchor__logo {
+        width: 80px;
+        height: 20px;
+        margin: 0 auto
+    }
+}
+
+.hard-anchor__item--2ds .hard-anchor__logo {
+    background-image: url("../img/ncommon/_common/logo/2ds.svg")
+}
+
+.hard-anchor__item--new3dsll .hard-anchor__logo {
+    background-image: url("../img/ncommon/_common/logo/new3dsll.svg")
+}
+
+.hard-anchor__item--new3ds .hard-anchor__logo {
+    background-image: url("../img/ncommon/_common/logo/new3ds.svg")
+}
+
+.hard-anchor__item--3dsll .hard-anchor__logo {
+    background-image: url("../img/ncommon/_common/logo/3dsll.svg");
+}
+
+@media screen and (min-width:760px),
+print {
+    .hard-anchor__item--3dsll .hard-anchor__logo {
+        width: 152px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-anchor__item--3dsll .hard-anchor__logo {
+        width: 95px
+    }
+}
+
+.hard-anchor__item--3ds .hard-anchor__logo {
+    background-image: url("../img/ncommon/_common/logo/3ds.svg")
+}
+
+.hard-anchor__itemInner:hover .hard-anchor__logo {
+    opacity: .7;
+    -webkit-transition: opacity 150ms cubic-bezier(.165, .84, .44, 1);
+    -moz-transition: opacity 150ms cubic-bezier(.165, .84, .44, 1);
+    -o-transition: opacity 150ms cubic-bezier(.165, .84, .44, 1);
+    transition: opacity 150ms cubic-bezier(.165, .84, .44, 1)
+}
+
+.hard-anchor__pic {
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    opacity: 1;
+    -webkit-transition: opacity 150ms linear;
+    -moz-transition: opacity 150ms linear;
+    -o-transition: opacity 150ms linear;
+    transition: opacity 150ms linear;
+}
+
+@media screen and (min-width:760px),
+print {
+    .hard-anchor__pic {
+        width: 100px;
+        height: 100px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-anchor__pic {
+        width: 80px;
+        height: 80px
+    }
+}
+
+.hard-anchor__item--2ds .hard-anchor__pic {
+    background-image: url("../img/hardware/anchor/img-2ds.jpg")
+}
+
+.hard-anchor__item--new3dsll .hard-anchor__pic {
+    background-image: url("../img/hardware/anchor/img-new3dsll.jpg")
+}
+
+.hard-anchor__item--new3ds .hard-anchor__pic {
+    background-image: url("../img/hardware/anchor/img-new3ds.jpg")
+}
+
+.hard-anchor__item--3dsll .hard-anchor__pic {
+    background-image: url("../img/hardware/anchor/img-3dsll.jpg")
+}
+
+.hard-anchor__item--3ds .hard-anchor__pic {
+    background-image: url("../img/hardware/anchor/img-3ds.jpg")
+}
+
+.hard-anchor__itemInner:hover .hard-anchor__pic {
+    opacity: .7;
+    -webkit-transition: opacity 150ms cubic-bezier(.165, .84, .44, 1);
+    -moz-transition: opacity 150ms cubic-bezier(.165, .84, .44, 1);
+    -o-transition: opacity 150ms cubic-bezier(.165, .84, .44, 1);
+    transition: opacity 150ms cubic-bezier(.165, .84, .44, 1)
+}
+
+.hard-anchor__text {
+    padding-top: 7px;
+}
+
+@media screen and (min-width:760px),
+print {
+    .hard-anchor__text>span {
+        display: inline-block;
+        position: relative;
+        font-weight: bold;
+        -webkit-transition: border-color 150ms linear, background-color 150ms linear, color 150ms linear;
+        -moz-transition: border-color 150ms linear, background-color 150ms linear, color 150ms linear;
+        -o-transition: border-color 150ms linear, background-color 150ms linear, color 150ms linear;
+        transition: border-color 150ms linear, background-color 150ms linear, color 150ms linear;
+        padding-left: 19px;
+        margin-top: -4px;
+        margin-bottom: -4px;
+        font-size: 12px;
+        line-height: 20px
+    }
+    .hard-anchor__text>span:hover,
+    .hard-anchor__text>span:active,
+    .hard-anchor__text>span:focus,
+    a:hover .hard-anchor__text>span,
+    button:hover .hard-anchor__text>span,
+    .ncommon-u-linkbox:hover .hard-anchor__text>span {
+        color: #ce181e;
+        -webkit-transition: border-color 150ms cubic-bezier(.165, .84, .44, 1), background-color 150ms cubic-bezier(.165, .84, .44, 1), color 150ms cubic-bezier(.165, .84, .44, 1);
+        -moz-transition: border-color 150ms cubic-bezier(.165, .84, .44, 1), background-color 150ms cubic-bezier(.165, .84, .44, 1), color 150ms cubic-bezier(.165, .84, .44, 1);
+        -o-transition: border-color 150ms cubic-bezier(.165, .84, .44, 1), background-color 150ms cubic-bezier(.165, .84, .44, 1), color 150ms cubic-bezier(.165, .84, .44, 1);
+        transition: border-color 150ms cubic-bezier(.165, .84, .44, 1), background-color 150ms cubic-bezier(.165, .84, .44, 1), color 150ms cubic-bezier(.165, .84, .44, 1)
+    }
+    .hard-anchor__text>span i,
+    .hard-anchor__text>span i:before,
+    .hard-anchor__text>span i:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        color: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+        -moz-background-size: 12px auto;
+        -o-background-size: 12px auto;
+        background-size: 12px auto
+    }
+    .hard-anchor__text>span:hover i,
+    .hard-anchor__text>span:active i,
+    .hard-anchor__text>span:focus i,
+    a:hover .hard-anchor__text>span i,
+    button:hover .hard-anchor__text>span i,
+    .ncommon-u-linkbox:hover .hard-anchor__text>span i,
+    .hard-anchor__text>span:hover i:before,
+    .hard-anchor__text>span:active i:before,
+    .hard-anchor__text>span:focus i:before,
+    a:hover .hard-anchor__text>span i:before,
+    button:hover .hard-anchor__text>span i:before,
+    .ncommon-u-linkbox:hover .hard-anchor__text>span i:before,
+    .hard-anchor__text>span:hover i:after,
+    .hard-anchor__text>span:active i:after,
+    .hard-anchor__text>span:focus i:after,
+    a:hover .hard-anchor__text>span i:after,
+    button:hover .hard-anchor__text>span i:after,
+    .ncommon-u-linkbox:hover .hard-anchor__text>span i:after {
+        -webkit-transition: all 150ms cubic-bezier(.25, .46, .45, .94);
+        -moz-transition: all 150ms cubic-bezier(.25, .46, .45, .94);
+        -o-transition: all 150ms cubic-bezier(.25, .46, .45, .94);
+        transition: all 150ms cubic-bezier(.25, .46, .45, .94)
+    }
+    .hard-anchor__text>span>i {
+        position: relative;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%
+    }
+    .hard-anchor__text>span>i:after {
+        content: '';
+        display: block;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        left: -2px;
+        top: -2px;
+        border: 2px solid rgba(255, 255, 255, 0)
+    }
+    .hard-anchor__text>span>i>i,
+    .hard-anchor__text>span>i>i>i:first-child {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #fff
+    }
+    .hard-anchor__text>span>i>i>i:first-child {
+        opacity: 0
+    }
+    .hard-anchor__text>span>i>i {
+        background-image: url(../img/ncommon/_common/icon/down-fill-3ds.svg)
+    }
+    .hard-anchor__text>span>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/down-stroke-3ds.svg)
+    }
+    .hard-anchor__text>span>i {
+        position: absolute;
+        top: 4px;
+        left: 0
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-anchor__text>span {
+        display: inline-block;
+        position: relative;
+        font-weight: bold;
+        -webkit-transition: border-color 150ms linear, background-color 150ms linear, color 150ms linear;
+        -moz-transition: border-color 150ms linear, background-color 150ms linear, color 150ms linear;
+        -o-transition: border-color 150ms linear, background-color 150ms linear, color 150ms linear;
+        transition: border-color 150ms linear, background-color 150ms linear, color 150ms linear;
+        padding-left: 16px;
+        margin-top: -4px;
+        margin-bottom: -4px;
+        font-size: 10px;
+        line-height: 18px
+    }
+    .hard-anchor__text>span:hover,
+    .hard-anchor__text>span:active,
+    .hard-anchor__text>span:focus,
+    a:hover .hard-anchor__text>span,
+    button:hover .hard-anchor__text>span,
+    .ncommon-u-linkbox:hover .hard-anchor__text>span {
+        color: #ce181e;
+        -webkit-transition: border-color 150ms cubic-bezier(.165, .84, .44, 1), background-color 150ms cubic-bezier(.165, .84, .44, 1), color 150ms cubic-bezier(.165, .84, .44, 1);
+        -moz-transition: border-color 150ms cubic-bezier(.165, .84, .44, 1), background-color 150ms cubic-bezier(.165, .84, .44, 1), color 150ms cubic-bezier(.165, .84, .44, 1);
+        -o-transition: border-color 150ms cubic-bezier(.165, .84, .44, 1), background-color 150ms cubic-bezier(.165, .84, .44, 1), color 150ms cubic-bezier(.165, .84, .44, 1);
+        transition: border-color 150ms cubic-bezier(.165, .84, .44, 1), background-color 150ms cubic-bezier(.165, .84, .44, 1), color 150ms cubic-bezier(.165, .84, .44, 1)
+    }
+    .hard-anchor__text>span i,
+    .hard-anchor__text>span i:before,
+    .hard-anchor__text>span i:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        color: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+        -moz-background-size: 10px auto;
+        -o-background-size: 10px auto;
+        background-size: 10px auto
+    }
+    .hard-anchor__text>span:hover i,
+    .hard-anchor__text>span:active i,
+    .hard-anchor__text>span:focus i,
+    a:hover .hard-anchor__text>span i,
+    button:hover .hard-anchor__text>span i,
+    .ncommon-u-linkbox:hover .hard-anchor__text>span i,
+    .hard-anchor__text>span:hover i:before,
+    .hard-anchor__text>span:active i:before,
+    .hard-anchor__text>span:focus i:before,
+    a:hover .hard-anchor__text>span i:before,
+    button:hover .hard-anchor__text>span i:before,
+    .ncommon-u-linkbox:hover .hard-anchor__text>span i:before,
+    .hard-anchor__text>span:hover i:after,
+    .hard-anchor__text>span:active i:after,
+    .hard-anchor__text>span:focus i:after,
+    a:hover .hard-anchor__text>span i:after,
+    button:hover .hard-anchor__text>span i:after,
+    .ncommon-u-linkbox:hover .hard-anchor__text>span i:after {
+        -webkit-transition: all 150ms cubic-bezier(.25, .46, .45, .94);
+        -moz-transition: all 150ms cubic-bezier(.25, .46, .45, .94);
+        -o-transition: all 150ms cubic-bezier(.25, .46, .45, .94);
+        transition: all 150ms cubic-bezier(.25, .46, .45, .94)
+    }
+    .hard-anchor__text>span>i {
+        position: relative;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%
+    }
+    .hard-anchor__text>span>i:after {
+        content: '';
+        display: block;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        left: -2px;
+        top: -2px;
+        border: 2px solid rgba(255, 255, 255, 0)
+    }
+    .hard-anchor__text>span>i>i,
+    .hard-anchor__text>span>i>i>i:first-child {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #fff
+    }
+    .hard-anchor__text>span>i>i>i:first-child {
+        opacity: 0
+    }
+    .hard-anchor__text>span>i>i {
+        background-image: url(../img/ncommon/_common/icon/down-fill-3ds.svg)
+    }
+    .hard-anchor__text>span>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/down-stroke-3ds.svg)
+    }
+    .hard-anchor__text>span>i {
+        position: absolute;
+        top: 4px;
+        left: 0
+    }
+}
+
+@media screen and (min-width:1200px),
+print {
+    .hard-featureCol--2 {
+        width: 40%
+    }
+}
+
+@media screen and (min-width:980px) and (max-width:1199px) {
+    .hard-featureCol--2 {
+        width: 45%
+    }
+}
+
+@media screen and (min-width:1200px),
+print {
+    .hard-featureCol--3 {
+        width: 60%
+    }
+}
+
+@media screen and (min-width:980px) and (max-width:1199px) {
+    .hard-featureCol--3 {
+        width: 55%
+    }
+}
+
+.hard-featureSection {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+@media screen and (min-width:760px),
+print {
+    .hard-featureSection {
+        padding: 98px 0
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-featureSection {
+        padding: 70px 0
+    }
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-featureSection__inner {
+        zoom: 1;
+        position: relative
+    }
+    .hard-featureSection__inner:after {
+        content: "";
+        display: block;
+        clear: both
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-featureSection__inner {
+        padding: 0 21px
+    }
+}
+
+@media screen and (min-width:760px),
+print {
+    .hard-featureSection__texts+.hard-featureSection__texts {
+        padding-top: 70px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-featureSection__texts+.hard-featureSection__texts {
+        padding-top: 56px
+    }
+}
+
+.hard-featureSection__lead {
+    font-weight: bold;
+}
+
+@media screen and (min-width:760px),
+print {
+    .hard-featureSection__lead>p {
+        margin-top: -6px;
+        margin-bottom: -6px;
+        font-size: 30px;
+        line-height: 42px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-featureSection__lead>p {
+        margin-top: -6px;
+        margin-bottom: -6px;
+        font-size: 21px;
+        line-height: 33px
+    }
+}
+
+.hard-featureSection__lead span {
+    display: inline-block
+}
+
+@media screen and (min-width:760px),
+print {
+    .hard-featureSection__text>p {
+        margin-top: -7px;
+        margin-bottom: -7px;
+        font-size: 18px;
+        line-height: 32px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-featureSection__text>p {
+        margin-top: -7px;
+        margin-bottom: -7px;
+        font-size: 14px;
+        line-height: 28px
+    }
+}
+
+@media screen and (min-width:760px) and (max-width:979px) {
+    .hard-featureSection__text {
+        padding-top: 42px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-featureSection__text {
+        padding-top: 28px
+    }
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-featureSection__lead+.hard-featureSection__text {
+        padding-top: 42px
+    }
+}
+
+@media screen and (min-width:760px),
+print {
+    .hard-featureSection__link {
+        padding-top: 42px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-featureSection__link {
+        padding-top: 28px
+    }
+}
+
+@media screen and (min-width:760px),
+print {
+    .hard-featureSection__link>a {
+        display: inline-block;
+        position: relative;
+        font-weight: bold;
+        -webkit-transition: border-color 150ms linear, background-color 150ms linear, color 150ms linear;
+        -moz-transition: border-color 150ms linear, background-color 150ms linear, color 150ms linear;
+        -o-transition: border-color 150ms linear, background-color 150ms linear, color 150ms linear;
+        transition: border-color 150ms linear, background-color 150ms linear, color 150ms linear;
+        padding-left: 25px;
+        margin-top: -7px;
+        margin-bottom: -7px;
+        font-size: 18px;
+        line-height: 32px
+    }
+    .hard-featureSection__link>a:hover,
+    .hard-featureSection__link>a:active,
+    .hard-featureSection__link>a:focus,
+    a:hover .hard-featureSection__link>a,
+    button:hover .hard-featureSection__link>a,
+    .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #e60012;
+        -webkit-transition: border-color 150ms cubic-bezier(.165, .84, .44, 1), background-color 150ms cubic-bezier(.165, .84, .44, 1), color 150ms cubic-bezier(.165, .84, .44, 1);
+        -moz-transition: border-color 150ms cubic-bezier(.165, .84, .44, 1), background-color 150ms cubic-bezier(.165, .84, .44, 1), color 150ms cubic-bezier(.165, .84, .44, 1);
+        -o-transition: border-color 150ms cubic-bezier(.165, .84, .44, 1), background-color 150ms cubic-bezier(.165, .84, .44, 1), color 150ms cubic-bezier(.165, .84, .44, 1);
+        transition: border-color 150ms cubic-bezier(.165, .84, .44, 1), background-color 150ms cubic-bezier(.165, .84, .44, 1), color 150ms cubic-bezier(.165, .84, .44, 1)
+    }
+    [data-bodytheme='wiiu'] .hard-featureSection__link>a:hover,
+    [data-bodytheme='wiiu'] .hard-featureSection__link>a:active,
+    [data-bodytheme='wiiu'] .hard-featureSection__link>a:focus,
+    [data-bodytheme='wiiu'] a:hover .hard-featureSection__link>a,
+    [data-bodytheme='wiiu'] button:hover .hard-featureSection__link>a,
+    [data-bodytheme='wiiu'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #0096c8
+    }
+    [data-bodytheme='3ds'] .hard-featureSection__link>a:hover,
+    [data-bodytheme='3ds'] .hard-featureSection__link>a:active,
+    [data-bodytheme='3ds'] .hard-featureSection__link>a:focus,
+    [data-bodytheme='3ds'] a:hover .hard-featureSection__link>a,
+    [data-bodytheme='3ds'] button:hover .hard-featureSection__link>a,
+    [data-bodytheme='3ds'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #ce181e
+    }
+    [data-bodytheme='smartphone'] .hard-featureSection__link>a:hover,
+    [data-bodytheme='smartphone'] .hard-featureSection__link>a:active,
+    [data-bodytheme='smartphone'] .hard-featureSection__link>a:focus,
+    [data-bodytheme='smartphone'] a:hover .hard-featureSection__link>a,
+    [data-bodytheme='smartphone'] button:hover .hard-featureSection__link>a,
+    [data-bodytheme='smartphone'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #e60012
+    }
+    [data-theme='wiiu'] .hard-featureSection__link>a:hover,
+    [data-theme='wiiu'] .hard-featureSection__link>a:active,
+    [data-theme='wiiu'] .hard-featureSection__link>a:focus,
+    [data-theme='wiiu'] a:hover .hard-featureSection__link>a,
+    [data-theme='wiiu'] button:hover .hard-featureSection__link>a,
+    [data-theme='wiiu'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #0096c8
+    }
+    [data-theme='wii'] .hard-featureSection__link>a:hover,
+    [data-theme='wii'] .hard-featureSection__link>a:active,
+    [data-theme='wii'] .hard-featureSection__link>a:focus,
+    [data-theme='wii'] a:hover .hard-featureSection__link>a,
+    [data-theme='wii'] button:hover .hard-featureSection__link>a,
+    [data-theme='wii'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #34beed
+    }
+    [data-theme='3ds'] .hard-featureSection__link>a:hover,
+    [data-theme='3ds'] .hard-featureSection__link>a:active,
+    [data-theme='3ds'] .hard-featureSection__link>a:focus,
+    [data-theme='3ds'] a:hover .hard-featureSection__link>a,
+    [data-theme='3ds'] button:hover .hard-featureSection__link>a,
+    [data-theme='3ds'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #ce181e
+    }
+    [data-theme='ds'] .hard-featureSection__link>a:hover,
+    [data-theme='ds'] .hard-featureSection__link>a:active,
+    [data-theme='ds'] .hard-featureSection__link>a:focus,
+    [data-theme='ds'] a:hover .hard-featureSection__link>a,
+    [data-theme='ds'] button:hover .hard-featureSection__link>a,
+    [data-theme='ds'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #ff418c
+    }
+    [data-theme='switch'] .hard-featureSection__link>a:hover,
+    [data-theme='switch'] .hard-featureSection__link>a:active,
+    [data-theme='switch'] .hard-featureSection__link>a:focus,
+    [data-theme='switch'] a:hover .hard-featureSection__link>a,
+    [data-theme='switch'] button:hover .hard-featureSection__link>a,
+    [data-theme='switch'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #e60012
+    }
+    [data-theme='smartphone'] .hard-featureSection__link>a:hover,
+    [data-theme='smartphone'] .hard-featureSection__link>a:active,
+    [data-theme='smartphone'] .hard-featureSection__link>a:focus,
+    [data-theme='smartphone'] a:hover .hard-featureSection__link>a,
+    [data-theme='smartphone'] button:hover .hard-featureSection__link>a,
+    [data-theme='smartphone'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #e60012
+    }
+    [data-theme='amiibo'] .hard-featureSection__link>a:hover,
+    [data-theme='amiibo'] .hard-featureSection__link>a:active,
+    [data-theme='amiibo'] .hard-featureSection__link>a:focus,
+    [data-theme='amiibo'] a:hover .hard-featureSection__link>a,
+    [data-theme='amiibo'] button:hover .hard-featureSection__link>a,
+    [data-theme='amiibo'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #000
+    }
+    [data-theme='famicon'] .hard-featureSection__link>a:hover,
+    [data-theme='famicon'] .hard-featureSection__link>a:active,
+    [data-theme='famicon'] .hard-featureSection__link>a:focus,
+    [data-theme='famicon'] a:hover .hard-featureSection__link>a,
+    [data-theme='famicon'] button:hover .hard-featureSection__link>a,
+    [data-theme='famicon'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #a5141e
+    }
+    [data-theme='twitter'] .hard-featureSection__link>a:hover,
+    [data-theme='twitter'] .hard-featureSection__link>a:active,
+    [data-theme='twitter'] .hard-featureSection__link>a:focus,
+    [data-theme='twitter'] a:hover .hard-featureSection__link>a,
+    [data-theme='twitter'] button:hover .hard-featureSection__link>a,
+    [data-theme='twitter'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #1da1f2
+    }
+    [data-theme='eshop'] .hard-featureSection__link>a:hover,
+    [data-theme='eshop'] .hard-featureSection__link>a:active,
+    [data-theme='eshop'] .hard-featureSection__link>a:focus,
+    [data-theme='eshop'] a:hover .hard-featureSection__link>a,
+    [data-theme='eshop'] button:hover .hard-featureSection__link>a,
+    [data-theme='eshop'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #ff7d00
+    }
+    [data-theme='ranking'] .hard-featureSection__link>a:hover,
+    [data-theme='ranking'] .hard-featureSection__link>a:active,
+    [data-theme='ranking'] .hard-featureSection__link>a:focus,
+    [data-theme='ranking'] a:hover .hard-featureSection__link>a,
+    [data-theme='ranking'] button:hover .hard-featureSection__link>a,
+    [data-theme='ranking'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #6ac0eb
+    }
+    [data-theme='kids'] .hard-featureSection__link>a:hover,
+    [data-theme='kids'] .hard-featureSection__link>a:active,
+    [data-theme='kids'] .hard-featureSection__link>a:focus,
+    [data-theme='kids'] a:hover .hard-featureSection__link>a,
+    [data-theme='kids'] button:hover .hard-featureSection__link>a,
+    [data-theme='kids'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #ebb400
+    }
+    [data-theme='special'] .hard-featureSection__link>a:hover,
+    [data-theme='special'] .hard-featureSection__link>a:active,
+    [data-theme='special'] .hard-featureSection__link>a:focus,
+    [data-theme='special'] a:hover .hard-featureSection__link>a,
+    [data-theme='special'] button:hover .hard-featureSection__link>a,
+    [data-theme='special'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #ff550d
+    }
+    [data-theme='line'] .hard-featureSection__link>a:hover,
+    [data-theme='line'] .hard-featureSection__link>a:active,
+    [data-theme='line'] .hard-featureSection__link>a:focus,
+    [data-theme='line'] a:hover .hard-featureSection__link>a,
+    [data-theme='line'] button:hover .hard-featureSection__link>a,
+    [data-theme='line'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #38c400
+    }
+    [data-theme='guardian'] .hard-featureSection__link>a:hover,
+    [data-theme='guardian'] .hard-featureSection__link>a:active,
+    [data-theme='guardian'] .hard-featureSection__link>a:focus,
+    [data-theme='guardian'] a:hover .hard-featureSection__link>a,
+    [data-theme='guardian'] button:hover .hard-featureSection__link>a,
+    [data-theme='guardian'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #e44494
+    }
+    [data-theme='miiverse'] .hard-featureSection__link>a:hover,
+    [data-theme='miiverse'] .hard-featureSection__link>a:active,
+    [data-theme='miiverse'] .hard-featureSection__link>a:focus,
+    [data-theme='miiverse'] a:hover .hard-featureSection__link>a,
+    [data-theme='miiverse'] button:hover .hard-featureSection__link>a,
+    [data-theme='miiverse'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #00c800
+    }
+    [data-theme='netinfo'] .hard-featureSection__link>a:hover,
+    [data-theme='netinfo'] .hard-featureSection__link>a:active,
+    [data-theme='netinfo'] .hard-featureSection__link>a:focus,
+    [data-theme='netinfo'] a:hover .hard-featureSection__link>a,
+    [data-theme='netinfo'] button:hover .hard-featureSection__link>a,
+    [data-theme='netinfo'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #8092a7
+    }
+    [data-theme='other'] .hard-featureSection__link>a:hover,
+    [data-theme='other'] .hard-featureSection__link>a:active,
+    [data-theme='other'] .hard-featureSection__link>a:focus,
+    [data-theme='other'] a:hover .hard-featureSection__link>a,
+    [data-theme='other'] button:hover .hard-featureSection__link>a,
+    [data-theme='other'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #737373
+    }
+    [data-theme='white'] .hard-featureSection__link>a:hover,
+    [data-theme='white'] .hard-featureSection__link>a:active,
+    [data-theme='white'] .hard-featureSection__link>a:focus,
+    [data-theme='white'] a:hover .hard-featureSection__link>a,
+    [data-theme='white'] button:hover .hard-featureSection__link>a,
+    [data-theme='white'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #fff
+    }
+    [data-theme='default'] .hard-featureSection__link>a:hover,
+    [data-theme='default'] .hard-featureSection__link>a:active,
+    [data-theme='default'] .hard-featureSection__link>a:focus,
+    [data-theme='default'] a:hover .hard-featureSection__link>a,
+    [data-theme='default'] button:hover .hard-featureSection__link>a,
+    [data-theme='default'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #e60012
+    }
+    .hard-featureSection__link>a i,
+    .hard-featureSection__link>a i:before,
+    .hard-featureSection__link>a i:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        color: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+        -moz-background-size: 18px auto;
+        -o-background-size: 18px auto;
+        background-size: 18px auto
+    }
+    .hard-featureSection__link>a:hover i,
+    .hard-featureSection__link>a:active i,
+    .hard-featureSection__link>a:focus i,
+    a:hover .hard-featureSection__link>a i,
+    button:hover .hard-featureSection__link>a i,
+    .ncommon-u-linkbox:hover .hard-featureSection__link>a i,
+    .hard-featureSection__link>a:hover i:before,
+    .hard-featureSection__link>a:active i:before,
+    .hard-featureSection__link>a:focus i:before,
+    a:hover .hard-featureSection__link>a i:before,
+    button:hover .hard-featureSection__link>a i:before,
+    .ncommon-u-linkbox:hover .hard-featureSection__link>a i:before,
+    .hard-featureSection__link>a:hover i:after,
+    .hard-featureSection__link>a:active i:after,
+    .hard-featureSection__link>a:focus i:after,
+    a:hover .hard-featureSection__link>a i:after,
+    button:hover .hard-featureSection__link>a i:after,
+    .ncommon-u-linkbox:hover .hard-featureSection__link>a i:after {
+        -webkit-transition: all 150ms cubic-bezier(.25, .46, .45, .94);
+        -moz-transition: all 150ms cubic-bezier(.25, .46, .45, .94);
+        -o-transition: all 150ms cubic-bezier(.25, .46, .45, .94);
+        transition: all 150ms cubic-bezier(.25, .46, .45, .94)
+    }
+    .hard-featureSection__link>a>i {
+        position: relative;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%
+    }
+    .hard-featureSection__link>a>i:after {
+        content: '';
+        display: block;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        left: -2px;
+        top: -2px;
+        border: 2px solid rgba(255, 255, 255, 0)
+    }
+    .hard-featureSection__link>a>i>i,
+    .hard-featureSection__link>a>i>i>i:first-child {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #fff
+    }
+    .hard-featureSection__link>a>i>i>i:first-child {
+        opacity: 0
+    }
+    .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-red.svg);
+    }
+    [data-bodytheme='wiiu'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-wiiu.svg)
+    }
+    [data-bodytheme='3ds'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-3ds.svg)
+    }
+    [data-bodytheme='smartphone'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-red.svg)
+    }
+    [data-theme='wiiu'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-wiiu.svg)
+    }
+    [data-theme='wii'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-wii.svg)
+    }
+    [data-theme='3ds'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-3ds.svg)
+    }
+    [data-theme='ds'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-ds.svg)
+    }
+    [data-theme='switch'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-red.svg)
+    }
+    [data-theme='smartphone'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-red.svg)
+    }
+    [data-theme='amiibo'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-amiibo.svg)
+    }
+    [data-theme='famicon'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-famicon.svg)
+    }
+    [data-theme='twitter'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-twitter.svg)
+    }
+    [data-theme='eshop'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-eshop.svg)
+    }
+    [data-theme='ranking'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-ranking.svg)
+    }
+    [data-theme='kids'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-kids.svg)
+    }
+    [data-theme='special'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-special.svg)
+    }
+    [data-theme='line'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-line.svg)
+    }
+    [data-theme='guardian'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-guardian.svg)
+    }
+    [data-theme='miiverse'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-miiverse.svg)
+    }
+    [data-theme='netinfo'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-netinfo.svg)
+    }
+    [data-theme='other'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-other.svg)
+    }
+    [data-theme='white'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-white.svg)
+    }
+    [data-theme='default'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-red.svg)
+    }
+    .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-red.svg);
+    }
+    [data-bodytheme='wiiu'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-wiiu.svg)
+    }
+    [data-bodytheme='3ds'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-3ds.svg)
+    }
+    [data-bodytheme='smartphone'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-red.svg)
+    }
+    [data-theme='wiiu'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-wiiu.svg)
+    }
+    [data-theme='wii'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-wii.svg)
+    }
+    [data-theme='3ds'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-3ds.svg)
+    }
+    [data-theme='ds'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-ds.svg)
+    }
+    [data-theme='switch'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-red.svg)
+    }
+    [data-theme='smartphone'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-red.svg)
+    }
+    [data-theme='amiibo'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-amiibo.svg)
+    }
+    [data-theme='famicon'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-famicon.svg)
+    }
+    [data-theme='twitter'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-twitter.svg)
+    }
+    [data-theme='eshop'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-eshop.svg)
+    }
+    [data-theme='ranking'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-ranking.svg)
+    }
+    [data-theme='kids'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-kids.svg)
+    }
+    [data-theme='special'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-special.svg)
+    }
+    [data-theme='line'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-line.svg)
+    }
+    [data-theme='guardian'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-guardian.svg)
+    }
+    [data-theme='miiverse'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-miiverse.svg)
+    }
+    [data-theme='netinfo'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-netinfo.svg)
+    }
+    [data-theme='other'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-other.svg)
+    }
+    [data-theme='white'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-white.svg)
+    }
+    [data-theme='default'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-red.svg)
+    }
+    .hard-featureSection__link>a>i {
+        position: absolute;
+        top: 7px;
+        left: 0
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-featureSection__link>a {
+        display: inline-block;
+        position: relative;
+        font-weight: bold;
+        -webkit-transition: border-color 150ms linear, background-color 150ms linear, color 150ms linear;
+        -moz-transition: border-color 150ms linear, background-color 150ms linear, color 150ms linear;
+        -o-transition: border-color 150ms linear, background-color 150ms linear, color 150ms linear;
+        transition: border-color 150ms linear, background-color 150ms linear, color 150ms linear;
+        padding-left: 20px;
+        margin-top: -5px;
+        margin-bottom: -5px;
+        font-size: 14px;
+        line-height: 24px
+    }
+    .hard-featureSection__link>a:hover,
+    .hard-featureSection__link>a:active,
+    .hard-featureSection__link>a:focus,
+    a:hover .hard-featureSection__link>a,
+    button:hover .hard-featureSection__link>a,
+    .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #e60012;
+        -webkit-transition: border-color 150ms cubic-bezier(.165, .84, .44, 1), background-color 150ms cubic-bezier(.165, .84, .44, 1), color 150ms cubic-bezier(.165, .84, .44, 1);
+        -moz-transition: border-color 150ms cubic-bezier(.165, .84, .44, 1), background-color 150ms cubic-bezier(.165, .84, .44, 1), color 150ms cubic-bezier(.165, .84, .44, 1);
+        -o-transition: border-color 150ms cubic-bezier(.165, .84, .44, 1), background-color 150ms cubic-bezier(.165, .84, .44, 1), color 150ms cubic-bezier(.165, .84, .44, 1);
+        transition: border-color 150ms cubic-bezier(.165, .84, .44, 1), background-color 150ms cubic-bezier(.165, .84, .44, 1), color 150ms cubic-bezier(.165, .84, .44, 1)
+    }
+    [data-bodytheme='wiiu'] .hard-featureSection__link>a:hover,
+    [data-bodytheme='wiiu'] .hard-featureSection__link>a:active,
+    [data-bodytheme='wiiu'] .hard-featureSection__link>a:focus,
+    [data-bodytheme='wiiu'] a:hover .hard-featureSection__link>a,
+    [data-bodytheme='wiiu'] button:hover .hard-featureSection__link>a,
+    [data-bodytheme='wiiu'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #0096c8
+    }
+    [data-bodytheme='3ds'] .hard-featureSection__link>a:hover,
+    [data-bodytheme='3ds'] .hard-featureSection__link>a:active,
+    [data-bodytheme='3ds'] .hard-featureSection__link>a:focus,
+    [data-bodytheme='3ds'] a:hover .hard-featureSection__link>a,
+    [data-bodytheme='3ds'] button:hover .hard-featureSection__link>a,
+    [data-bodytheme='3ds'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #ce181e
+    }
+    [data-bodytheme='smartphone'] .hard-featureSection__link>a:hover,
+    [data-bodytheme='smartphone'] .hard-featureSection__link>a:active,
+    [data-bodytheme='smartphone'] .hard-featureSection__link>a:focus,
+    [data-bodytheme='smartphone'] a:hover .hard-featureSection__link>a,
+    [data-bodytheme='smartphone'] button:hover .hard-featureSection__link>a,
+    [data-bodytheme='smartphone'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #e60012
+    }
+    [data-theme='wiiu'] .hard-featureSection__link>a:hover,
+    [data-theme='wiiu'] .hard-featureSection__link>a:active,
+    [data-theme='wiiu'] .hard-featureSection__link>a:focus,
+    [data-theme='wiiu'] a:hover .hard-featureSection__link>a,
+    [data-theme='wiiu'] button:hover .hard-featureSection__link>a,
+    [data-theme='wiiu'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #0096c8
+    }
+    [data-theme='wii'] .hard-featureSection__link>a:hover,
+    [data-theme='wii'] .hard-featureSection__link>a:active,
+    [data-theme='wii'] .hard-featureSection__link>a:focus,
+    [data-theme='wii'] a:hover .hard-featureSection__link>a,
+    [data-theme='wii'] button:hover .hard-featureSection__link>a,
+    [data-theme='wii'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #34beed
+    }
+    [data-theme='3ds'] .hard-featureSection__link>a:hover,
+    [data-theme='3ds'] .hard-featureSection__link>a:active,
+    [data-theme='3ds'] .hard-featureSection__link>a:focus,
+    [data-theme='3ds'] a:hover .hard-featureSection__link>a,
+    [data-theme='3ds'] button:hover .hard-featureSection__link>a,
+    [data-theme='3ds'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #ce181e
+    }
+    [data-theme='ds'] .hard-featureSection__link>a:hover,
+    [data-theme='ds'] .hard-featureSection__link>a:active,
+    [data-theme='ds'] .hard-featureSection__link>a:focus,
+    [data-theme='ds'] a:hover .hard-featureSection__link>a,
+    [data-theme='ds'] button:hover .hard-featureSection__link>a,
+    [data-theme='ds'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #ff418c
+    }
+    [data-theme='switch'] .hard-featureSection__link>a:hover,
+    [data-theme='switch'] .hard-featureSection__link>a:active,
+    [data-theme='switch'] .hard-featureSection__link>a:focus,
+    [data-theme='switch'] a:hover .hard-featureSection__link>a,
+    [data-theme='switch'] button:hover .hard-featureSection__link>a,
+    [data-theme='switch'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #e60012
+    }
+    [data-theme='smartphone'] .hard-featureSection__link>a:hover,
+    [data-theme='smartphone'] .hard-featureSection__link>a:active,
+    [data-theme='smartphone'] .hard-featureSection__link>a:focus,
+    [data-theme='smartphone'] a:hover .hard-featureSection__link>a,
+    [data-theme='smartphone'] button:hover .hard-featureSection__link>a,
+    [data-theme='smartphone'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #e60012
+    }
+    [data-theme='amiibo'] .hard-featureSection__link>a:hover,
+    [data-theme='amiibo'] .hard-featureSection__link>a:active,
+    [data-theme='amiibo'] .hard-featureSection__link>a:focus,
+    [data-theme='amiibo'] a:hover .hard-featureSection__link>a,
+    [data-theme='amiibo'] button:hover .hard-featureSection__link>a,
+    [data-theme='amiibo'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #000
+    }
+    [data-theme='famicon'] .hard-featureSection__link>a:hover,
+    [data-theme='famicon'] .hard-featureSection__link>a:active,
+    [data-theme='famicon'] .hard-featureSection__link>a:focus,
+    [data-theme='famicon'] a:hover .hard-featureSection__link>a,
+    [data-theme='famicon'] button:hover .hard-featureSection__link>a,
+    [data-theme='famicon'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #a5141e
+    }
+    [data-theme='twitter'] .hard-featureSection__link>a:hover,
+    [data-theme='twitter'] .hard-featureSection__link>a:active,
+    [data-theme='twitter'] .hard-featureSection__link>a:focus,
+    [data-theme='twitter'] a:hover .hard-featureSection__link>a,
+    [data-theme='twitter'] button:hover .hard-featureSection__link>a,
+    [data-theme='twitter'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #1da1f2
+    }
+    [data-theme='eshop'] .hard-featureSection__link>a:hover,
+    [data-theme='eshop'] .hard-featureSection__link>a:active,
+    [data-theme='eshop'] .hard-featureSection__link>a:focus,
+    [data-theme='eshop'] a:hover .hard-featureSection__link>a,
+    [data-theme='eshop'] button:hover .hard-featureSection__link>a,
+    [data-theme='eshop'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #ff7d00
+    }
+    [data-theme='ranking'] .hard-featureSection__link>a:hover,
+    [data-theme='ranking'] .hard-featureSection__link>a:active,
+    [data-theme='ranking'] .hard-featureSection__link>a:focus,
+    [data-theme='ranking'] a:hover .hard-featureSection__link>a,
+    [data-theme='ranking'] button:hover .hard-featureSection__link>a,
+    [data-theme='ranking'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #6ac0eb
+    }
+    [data-theme='kids'] .hard-featureSection__link>a:hover,
+    [data-theme='kids'] .hard-featureSection__link>a:active,
+    [data-theme='kids'] .hard-featureSection__link>a:focus,
+    [data-theme='kids'] a:hover .hard-featureSection__link>a,
+    [data-theme='kids'] button:hover .hard-featureSection__link>a,
+    [data-theme='kids'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #ebb400
+    }
+    [data-theme='special'] .hard-featureSection__link>a:hover,
+    [data-theme='special'] .hard-featureSection__link>a:active,
+    [data-theme='special'] .hard-featureSection__link>a:focus,
+    [data-theme='special'] a:hover .hard-featureSection__link>a,
+    [data-theme='special'] button:hover .hard-featureSection__link>a,
+    [data-theme='special'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #ff550d
+    }
+    [data-theme='line'] .hard-featureSection__link>a:hover,
+    [data-theme='line'] .hard-featureSection__link>a:active,
+    [data-theme='line'] .hard-featureSection__link>a:focus,
+    [data-theme='line'] a:hover .hard-featureSection__link>a,
+    [data-theme='line'] button:hover .hard-featureSection__link>a,
+    [data-theme='line'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #38c400
+    }
+    [data-theme='guardian'] .hard-featureSection__link>a:hover,
+    [data-theme='guardian'] .hard-featureSection__link>a:active,
+    [data-theme='guardian'] .hard-featureSection__link>a:focus,
+    [data-theme='guardian'] a:hover .hard-featureSection__link>a,
+    [data-theme='guardian'] button:hover .hard-featureSection__link>a,
+    [data-theme='guardian'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #e44494
+    }
+    [data-theme='miiverse'] .hard-featureSection__link>a:hover,
+    [data-theme='miiverse'] .hard-featureSection__link>a:active,
+    [data-theme='miiverse'] .hard-featureSection__link>a:focus,
+    [data-theme='miiverse'] a:hover .hard-featureSection__link>a,
+    [data-theme='miiverse'] button:hover .hard-featureSection__link>a,
+    [data-theme='miiverse'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #00c800
+    }
+    [data-theme='netinfo'] .hard-featureSection__link>a:hover,
+    [data-theme='netinfo'] .hard-featureSection__link>a:active,
+    [data-theme='netinfo'] .hard-featureSection__link>a:focus,
+    [data-theme='netinfo'] a:hover .hard-featureSection__link>a,
+    [data-theme='netinfo'] button:hover .hard-featureSection__link>a,
+    [data-theme='netinfo'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #8092a7
+    }
+    [data-theme='other'] .hard-featureSection__link>a:hover,
+    [data-theme='other'] .hard-featureSection__link>a:active,
+    [data-theme='other'] .hard-featureSection__link>a:focus,
+    [data-theme='other'] a:hover .hard-featureSection__link>a,
+    [data-theme='other'] button:hover .hard-featureSection__link>a,
+    [data-theme='other'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #737373
+    }
+    [data-theme='white'] .hard-featureSection__link>a:hover,
+    [data-theme='white'] .hard-featureSection__link>a:active,
+    [data-theme='white'] .hard-featureSection__link>a:focus,
+    [data-theme='white'] a:hover .hard-featureSection__link>a,
+    [data-theme='white'] button:hover .hard-featureSection__link>a,
+    [data-theme='white'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #fff
+    }
+    [data-theme='default'] .hard-featureSection__link>a:hover,
+    [data-theme='default'] .hard-featureSection__link>a:active,
+    [data-theme='default'] .hard-featureSection__link>a:focus,
+    [data-theme='default'] a:hover .hard-featureSection__link>a,
+    [data-theme='default'] button:hover .hard-featureSection__link>a,
+    [data-theme='default'] .ncommon-u-linkbox:hover .hard-featureSection__link>a {
+        color: #e60012
+    }
+    .hard-featureSection__link>a i,
+    .hard-featureSection__link>a i:before,
+    .hard-featureSection__link>a i:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        color: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+        -moz-background-size: 14px auto;
+        -o-background-size: 14px auto;
+        background-size: 14px auto
+    }
+    .hard-featureSection__link>a:hover i,
+    .hard-featureSection__link>a:active i,
+    .hard-featureSection__link>a:focus i,
+    a:hover .hard-featureSection__link>a i,
+    button:hover .hard-featureSection__link>a i,
+    .ncommon-u-linkbox:hover .hard-featureSection__link>a i,
+    .hard-featureSection__link>a:hover i:before,
+    .hard-featureSection__link>a:active i:before,
+    .hard-featureSection__link>a:focus i:before,
+    a:hover .hard-featureSection__link>a i:before,
+    button:hover .hard-featureSection__link>a i:before,
+    .ncommon-u-linkbox:hover .hard-featureSection__link>a i:before,
+    .hard-featureSection__link>a:hover i:after,
+    .hard-featureSection__link>a:active i:after,
+    .hard-featureSection__link>a:focus i:after,
+    a:hover .hard-featureSection__link>a i:after,
+    button:hover .hard-featureSection__link>a i:after,
+    .ncommon-u-linkbox:hover .hard-featureSection__link>a i:after {
+        -webkit-transition: all 150ms cubic-bezier(.25, .46, .45, .94);
+        -moz-transition: all 150ms cubic-bezier(.25, .46, .45, .94);
+        -o-transition: all 150ms cubic-bezier(.25, .46, .45, .94);
+        transition: all 150ms cubic-bezier(.25, .46, .45, .94)
+    }
+    .hard-featureSection__link>a>i {
+        position: relative;
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%
+    }
+    .hard-featureSection__link>a>i:after {
+        content: '';
+        display: block;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        left: -2px;
+        top: -2px;
+        border: 2px solid rgba(255, 255, 255, 0)
+    }
+    .hard-featureSection__link>a>i>i,
+    .hard-featureSection__link>a>i>i>i:first-child {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #fff
+    }
+    .hard-featureSection__link>a>i>i>i:first-child {
+        opacity: 0
+    }
+    .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-red.svg);
+    }
+    [data-bodytheme='wiiu'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-wiiu.svg)
+    }
+    [data-bodytheme='3ds'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-3ds.svg)
+    }
+    [data-bodytheme='smartphone'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-red.svg)
+    }
+    [data-theme='wiiu'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-wiiu.svg)
+    }
+    [data-theme='wii'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-wii.svg)
+    }
+    [data-theme='3ds'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-3ds.svg)
+    }
+    [data-theme='ds'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-ds.svg)
+    }
+    [data-theme='switch'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-red.svg)
+    }
+    [data-theme='smartphone'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-red.svg)
+    }
+    [data-theme='amiibo'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-amiibo.svg)
+    }
+    [data-theme='famicon'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-famicon.svg)
+    }
+    [data-theme='twitter'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-twitter.svg)
+    }
+    [data-theme='eshop'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-eshop.svg)
+    }
+    [data-theme='ranking'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-ranking.svg)
+    }
+    [data-theme='kids'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-kids.svg)
+    }
+    [data-theme='special'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-special.svg)
+    }
+    [data-theme='line'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-line.svg)
+    }
+    [data-theme='guardian'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-guardian.svg)
+    }
+    [data-theme='miiverse'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-miiverse.svg)
+    }
+    [data-theme='netinfo'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-netinfo.svg)
+    }
+    [data-theme='other'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-other.svg)
+    }
+    [data-theme='white'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-white.svg)
+    }
+    [data-theme='default'] .hard-featureSection__link>a>i>i {
+        background-image: url(../img/ncommon/_common/icon/right-fill-red.svg)
+    }
+    .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-red.svg);
+    }
+    [data-bodytheme='wiiu'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-wiiu.svg)
+    }
+    [data-bodytheme='3ds'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-3ds.svg)
+    }
+    [data-bodytheme='smartphone'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-red.svg)
+    }
+    [data-theme='wiiu'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-wiiu.svg)
+    }
+    [data-theme='wii'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-wii.svg)
+    }
+    [data-theme='3ds'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-3ds.svg)
+    }
+    [data-theme='ds'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-ds.svg)
+    }
+    [data-theme='switch'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-red.svg)
+    }
+    [data-theme='smartphone'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-red.svg)
+    }
+    [data-theme='amiibo'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-amiibo.svg)
+    }
+    [data-theme='famicon'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-famicon.svg)
+    }
+    [data-theme='twitter'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-twitter.svg)
+    }
+    [data-theme='eshop'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-eshop.svg)
+    }
+    [data-theme='ranking'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-ranking.svg)
+    }
+    [data-theme='kids'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-kids.svg)
+    }
+    [data-theme='special'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-special.svg)
+    }
+    [data-theme='line'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-line.svg)
+    }
+    [data-theme='guardian'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-guardian.svg)
+    }
+    [data-theme='miiverse'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-miiverse.svg)
+    }
+    [data-theme='netinfo'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-netinfo.svg)
+    }
+    [data-theme='other'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-other.svg)
+    }
+    [data-theme='white'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-white.svg)
+    }
+    [data-theme='default'] .hard-featureSection__link>a>i>i>i:first-child {
+        background-image: url(../img/ncommon/_common/icon/right-stroke-red.svg)
+    }
+    .hard-featureSection__link>a>i {
+        position: absolute;
+        top: 5px;
+        left: 0
+    }
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-featureSection__textsWrap {
+        float: left
+    }
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-softList__texts {
+        zoom: 1
+    }
+    .hard-softList__texts:after {
+        content: "";
+        display: block;
+        clear: both
+    }
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-softList__leadWrap {
+        float: left
+    }
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-softList__otherTexts {
+        float: right
+    }
+}
+
+.hard-softList__list {
+    zoom: 1;
+}
+
+.hard-softList__list:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-softList__list {
+        padding-top: 70px
+    }
+}
+
+@media screen and (min-width:760px) and (max-width:979px) {
+    .hard-softList__list {
+        padding-top: 63px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-softList__list {
+        padding-top: 42px
+    }
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-softList__listCol {
+        float: left;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-right: 35px;
+        width: -webkit-calc((100% - 35px * (5 - 1)) / 5 - 0.1px);
+        width: -moz-calc((100% - 35px * (5 - 1)) / 5 - 0.1px);
+        width: calc((100% - 35px * (5 - 1)) / 5 - 0.1px)
+    }
+    .hard-softList__listCol:not(:nth-child(-n+5)) {
+        padding-top: 0
+    }
+    .hard-softList__listCol:nth-child(5n) {
+        margin-right: 0
+    }
+    .hard-softList__listCol:nth-child(5n+1) {
+        clear: left
+    }
+}
+
+@media screen and (min-width:760px) and (max-width:979px) {
+    .hard-softList__listCol {
+        float: left;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-right: 21px;
+        width: -webkit-calc((100% - 21px * (5 - 1)) / 5 - 0.1px);
+        width: -moz-calc((100% - 21px * (5 - 1)) / 5 - 0.1px);
+        width: calc((100% - 21px * (5 - 1)) / 5 - 0.1px)
+    }
+    .hard-softList__listCol:not(:nth-child(-n+5)) {
+        padding-top: 56px
+    }
+    .hard-softList__listCol:nth-child(5n) {
+        margin-right: 0
+    }
+    .hard-softList__listCol:nth-child(5n+1) {
+        clear: left
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-softList__listCol {
+        float: left;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-right: 4px;
+        width: -webkit-calc((100% - 4px * (2 - 1)) / 2 - 0.1px);
+        width: -moz-calc((100% - 4px * (2 - 1)) / 2 - 0.1px);
+        width: calc((100% - 4px * (2 - 1)) / 2 - 0.1px)
+    }
+    .hard-softList__listCol:not(:nth-child(-n+2)) {
+        padding-top: 49px
+    }
+    .hard-softList__listCol:nth-child(2n) {
+        margin-right: 0
+    }
+    .hard-softList__listCol:nth-child(2n+1) {
+        clear: left
+    }
+}
+
+.hard-softList__listItem {
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hard-softList__listItem:after {
+    content: "";
+    display: block;
+    padding-bottom: 55%
+}
+
+.hard-softList__listItem .hard-softList__listBalloon {
+    position: absolute;
+    bottom: 106px;
+    left: 50%;
+    background: #f2f2f2;
+    padding: 13px;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translate(-50%, 4px);
+    -moz-transform: translate(-50%, 4px);
+    -ms-transform: translate(-50%, 4px);
+    -o-transform: translate(-50%, 4px);
+    transform: translate(-50%, 4px);
+    -webkit-transition: visibility 0s linear 150ms, opacity 150ms linear, -webkit-transform 150ms linear;
+    -moz-transition: visibility 0s linear 150ms, opacity 150ms linear, -moz-transform 150ms linear;
+    -o-transition: visibility 0s linear 150ms, opacity 150ms linear, -o-transform 150ms linear;
+    transition: visibility 0s linear 150ms, opacity 150ms linear, transform 150ms linear
+}
+
+.hard-softList__listItem .hard-softList__listBalloon:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -10px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #f2f2f2 transparent transparent transparent;
+}
+
+@media screen and (min-width:980px) and (max-width:1199px) {
+    .hard-softList__listItem .hard-softList__listBalloon:after {
+        bottom: -7px
+    }
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-softList__listItem {
+        background-position: 50% 50%
+    }
+    .hard-softList__listItem:hover .hard-softList__listBalloon {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        -webkit-transition: opacity 150ms cubic-bezier(.165, .84, .44, 1), -webkit-transform 150ms cubic-bezier(.165, .84, .44, 1);
+        -moz-transition: opacity 150ms cubic-bezier(.165, .84, .44, 1), -moz-transform 150ms cubic-bezier(.165, .84, .44, 1);
+        -o-transition: opacity 150ms cubic-bezier(.165, .84, .44, 1), -o-transform 150ms cubic-bezier(.165, .84, .44, 1);
+        transition: opacity 150ms cubic-bezier(.165, .84, .44, 1), transform 150ms cubic-bezier(.165, .84, .44, 1)
+    }
+}
+
+@media screen and (min-width:980px) and (max-width:1199px) {
+    .hard-softList__listItem .hard-softList__listBalloon {
+        bottom: 91px
+    }
+}
+
+@media screen and (min-width:760px),
+print {
+    .hard-softList__listItem {
+        -moz-background-size: 70px auto;
+        -o-background-size: 70px auto;
+        background-size: 70px auto
+    }
+}
+
+@media screen and (min-width:760px) and (max-width:979px) {
+    .hard-softList__listItem:before {
+        padding-bottom: 77%
+    }
+}
+
+@media screen and (max-width:979px) {
+    .hard-softList__listItem {
+        background-position: center bottom
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-softList__listItem {
+        -moz-background-size: 96px auto;
+        -o-background-size: 96px auto;
+        background-size: 96px auto
+    }
+    .hard-softList__listItem:before {
+        padding-bottom: 77%
+    }
+}
+
+.hard-softList__listItem--1 {
+    background-image: url("../img/hardware/softlist/soft-icon-01.png")
+}
+
+.hard-softList__listItem--2 {
+    background-image: url("../img/hardware/softlist/soft-icon-02.png")
+}
+
+.hard-softList__listItem--3 {
+    background-image: url("../img/hardware/softlist/soft-icon-03.png")
+}
+
+.hard-softList__listItem--4 {
+    background-image: url("../img/hardware/softlist/soft-icon-04.png")
+}
+
+.hard-softList__listItem--5 {
+    background-image: url("../img/hardware/softlist/soft-icon-05.png")
+}
+
+.hard-softList__listItem--6 {
+    background-image: url("../img/hardware/softlist/soft-icon-06.png")
+}
+
+.hard-softList__listItem--7 {
+    background-image: url("../img/hardware/softlist/soft-icon-07.png")
+}
+
+.hard-softList__listItem--8 {
+    background-image: url("../img/hardware/softlist/soft-icon-08.png")
+}
+
+.hard-softList__listItem--9 {
+    background-image: url("../img/hardware/softlist/soft-icon-09.png")
+}
+
+.hard-softList__listItem--10 {
+    background-image: url("../img/hardware/softlist/soft-icon-10.png")
+}
+
+.hard-softList__listItemLink {
+    display: block;
+}
+
+@media screen and (min-width:760px) and (max-width:979px) {
+    .hard-softList__listItemLink {
+        margin-top: -14px
+    }
+}
+
+.hard-softList__listOnlyTabSP {
+    display: none;
+}
+
+@media screen and (max-width:979px) {
+    .hard-softList__listOnlyTabSP {
+        display: block
+    }
+}
+
+.hard-softList__listLogo {
+    background-repeat: no-repeat;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-position: center;
+}
+
+.hard-softList__listBalloon .hard-softList__listLogo {
+    display: block
+}
+
+@media screen and (max-width:979px) {
+    .hard-softList__listLogo {
+        margin-left: auto;
+        margin-right: auto;
+        height: 34px
+    }
+}
+
+@media screen and (min-width:760px) and (max-width:979px) {
+    .hard-softList__listLogo {
+        margin-bottom: 14px;
+        height: 34px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-softList__listLogo {
+        margin-bottom: 14px;
+        height: 40px
+    }
+}
+
+.hard-softList__listLogo--1 {
+    background-image: url("../img/hardware/softlist/soft-logo-01.png");
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-softList__listLogo--1 {
+        width: 145px;
+        position: relative
+    }
+    .hard-softList__listLogo--1:before {
+        content: '';
+        display: block;
+        padding-bottom: 26.20689655172414%
+    }
+}
+
+@media screen and (min-width:760px) and (max-width:979px) {
+    .hard-softList__listLogo--1 {
+        width: 96px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-softList__listLogo--1 {
+        width: 109px
+    }
+}
+
+.hard-softList__listLogo--2 {
+    background-image: url("../img/hardware/softlist/soft-logo-02.png");
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-softList__listLogo--2 {
+        width: 184px;
+        position: relative
+    }
+    .hard-softList__listLogo--2:before {
+        content: '';
+        display: block;
+        padding-bottom: 10.597826086956522%
+    }
+}
+
+@media screen and (min-width:760px) and (max-width:979px) {
+    .hard-softList__listLogo--2 {
+        width: 122px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-softList__listLogo--2 {
+        width: 154px
+    }
+}
+
+.hard-softList__listLogo--3 {
+    background-image: url("../img/hardware/softlist/soft-logo-03.png");
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-softList__listLogo--3 {
+        width: 144px;
+        position: relative
+    }
+    .hard-softList__listLogo--3:before {
+        content: '';
+        display: block;
+        padding-bottom: 27.083333333333332%
+    }
+}
+
+@media screen and (min-width:760px) and (max-width:979px) {
+    .hard-softList__listLogo--3 {
+        width: 96px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-softList__listLogo--3 {
+        width: 101px
+    }
+}
+
+.hard-softList__listLogo--4 {
+    background-image: url("../img/hardware/softlist/soft-logo-04.png");
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-softList__listLogo--4 {
+        width: 136px;
+        position: relative
+    }
+    .hard-softList__listLogo--4:before {
+        content: '';
+        display: block;
+        padding-bottom: 35.294117647058826%
+    }
+}
+
+@media screen and (min-width:760px) and (max-width:979px) {
+    .hard-softList__listLogo--4 {
+        width: 90px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-softList__listLogo--4 {
+        width: 109px
+    }
+}
+
+.hard-softList__listLogo--5 {
+    background-image: url("../img/hardware/softlist/soft-logo-05.png");
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-softList__listLogo--5 {
+        width: 185px;
+        position: relative
+    }
+    .hard-softList__listLogo--5:before {
+        content: '';
+        display: block;
+        padding-bottom: 22.702702702702705%
+    }
+}
+
+@media screen and (min-width:760px) and (max-width:979px) {
+    .hard-softList__listLogo--5 {
+        width: 123px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-softList__listLogo--5 {
+        width: 130px
+    }
+}
+
+.hard-softList__listLogo--6 {
+    background-image: url("../img/hardware/softlist/soft-logo-06.png");
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-softList__listLogo--6 {
+        width: 172px;
+        position: relative
+    }
+    .hard-softList__listLogo--6:before {
+        content: '';
+        display: block;
+        padding-bottom: 27.03488372093023%
+    }
+}
+
+@media screen and (min-width:760px) and (max-width:979px) {
+    .hard-softList__listLogo--6 {
+        width: 114px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-softList__listLogo--6 {
+        width: 118px
+    }
+}
+
+.hard-softList__listLogo--7 {
+    background-image: url("../img/hardware/softlist/soft-logo-07.png");
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-softList__listLogo--7 {
+        width: 173px;
+        position: relative
+    }
+    .hard-softList__listLogo--7:before {
+        content: '';
+        display: block;
+        padding-bottom: 22.54335260115607%
+    }
+}
+
+@media screen and (min-width:760px) and (max-width:979px) {
+    .hard-softList__listLogo--7 {
+        width: 115px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-softList__listLogo--7 {
+        width: 133px
+    }
+}
+
+.hard-softList__listLogo--8 {
+    background-image: url("../img/hardware/softlist/soft-logo-08.png");
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-softList__listLogo--8 {
+        width: 176px;
+        position: relative
+    }
+    .hard-softList__listLogo--8:before {
+        content: '';
+        display: block;
+        padding-bottom: 28.97727272727273%
+    }
+}
+
+@media screen and (min-width:760px) and (max-width:979px) {
+    .hard-softList__listLogo--8 {
+        width: 117px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-softList__listLogo--8 {
+        width: 130px
+    }
+}
+
+.hard-softList__listLogo--9 {
+    background-image: url("../img/hardware/softlist/soft-logo-09.png");
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-softList__listLogo--9 {
+        width: 118px;
+        position: relative
+    }
+    .hard-softList__listLogo--9:before {
+        content: '';
+        display: block;
+        padding-bottom: 37.28813559322034%
+    }
+}
+
+@media screen and (min-width:760px) and (max-width:979px) {
+    .hard-softList__listLogo--9 {
+        width: 78px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-softList__listLogo--9 {
+        width: 94px
+    }
+}
+
+.hard-softList__listLogo--10 {
+    background-image: url("../img/hardware/softlist/soft-logo-10.png");
+}
+
+@media screen and (min-width:980px),
+print {
+    .hard-softList__listLogo--10 {
+        width: 178px;
+        position: relative
+    }
+    .hard-softList__listLogo--10:before {
+        content: '';
+        display: block;
+        padding-bottom: 23.03370786516854%
+    }
+}
+
+@media screen and (min-width:760px) and (max-width:979px) {
+    .hard-softList__listLogo--10 {
+        width: 118px
+    }
+}
+
+@media screen and (max-width:759px) {
+    .hard-softList__listLogo--10 {
+        width: 134px
+    }
+}

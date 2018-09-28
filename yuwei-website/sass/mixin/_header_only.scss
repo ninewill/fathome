@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/*　*/
+
+footer {
+  display: block; }
+
+
+.l-logo-Nintendo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 990; }
+
+.logo-nintendo {
+  background-color: #e60012;
+  width: 80px;
+  height: 40px;
+  position: relative; }
+  .is_presentation-live .logo-nintendo {
+    height: 60px; }
+  .is_live .logo-nintendo {
+    height: 60px; }
+
+.logoNintendo__item {
+  width: 56px;
+  height: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto; }
+  .logoNintendo__item img {
+    width: 56px;
+    height: 14px; }
+	
+	.footer {
+  padding: 12px 0 24px 0;
+  width: 100%; }
+  .footer::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.footer-copyright {
+  font-size: 10px;
+  line-height: 36px;
+  font-family: -apple-system,BlinkMacSystemFont,Arial,Verdana,sans-serif;
+  color: #FFF;
+  float: left;
+  margin: 0 0 0 24px;
+  font-weight: bold; }
+
+.footer-sns {
+  float: right;
+  display: table;
+  table-layout: fixed;
+  margin: 0 24px 0 0; }
+
+.footer-sns__item {
+  display: table-cell;
+  padding: 0 0 0 10px; }
+  .footer-sns__item a {
+    width: 36px;
+    height: 36px;
+    display: block; }
+  .footer-sns__item i {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden; }
+  .footer-sns__item .ico {
+    width: 36px;
+    height: 36px; }
+	
+	.footer-link {
+  text-align: center;
+  padding-top: 12px;
+  margin: 0 0 24px 0; }
+
+.footer-link li {
+  color: #FFF;
+  line-height: 1.25;
+  display: inline-block;
+  margin: 0 20px; }
+
+.footer-link__arrow {
+  display: inline-block;
+  vertical-align: top;
+  margin: -2px 7px 0 0;
+  vertical-align: middle; }
+
+.footer-link .ico_arrow {
+  width: 8px;
+  height: 7px; }
+  .footer-link .ico_arrow .ico {
+    fill: #FFF;
+    width: 8px;
+    height: 7px; }
+
+.footer-link__text {
+  font-size: 10px;
+  display: inline-block;
+  font-weight: bold;
+  vertical-align: middle; }
+
+
+
+@media screen and (min-width: 641px){
+   }
+
+@media screen and (min-width: 544px){
+ }
+
+@media screen and (min-width: 768px){
+  }
+
+@media screen and (min-width: 1024px){
+ 
+  .logo-nintendo{
+    width: 155px;
+    height: 74px; }
+  .is_presentation-live .logo-nintendo{
+    height: 74px; }
+  .is_live .logo-nintendo{
+    height: 74px; }
+  .logoNintendo__item{
+    width: 110px;
+    height: 28px; }
+  .logoNintendo__item img{
+    width: 110px;
+    height: 28px; }
+	
+	
+	
+	 .l-footer-event{
+	position: static;
+	right: 50px;
+	bottom: 50px;
+	z-index: 50;
+}
+  .footer{
+    padding: 0;
+    width: 70px; }
+  .footer-copyright{
+    float: none;
+    line-height: 1;
+    margin: 15px 0 -2px 0;
+    text-align: right; }
+  .footer-sns{
+    float: none;
+    margin: 0; }
+  .footer-sns__item{
+    padding: 0 0 0 5px; }
+  .footer-sns__item:first-child{
+    padding: 0 0 0 0; }
+  .footer-sns__item a{
+    width: 20px;
+    height: 20px; }
+  .footer-sns__item i{
+    width: 20px;
+    height: 20px;
+    border-radius: 2px; }
+  .footer-sns__item .ico{
+    width: 20px;
+    height: 20px; }
+	 .is_event_index .l-footer-event{
+    position: static;
+    width: auto;
+    margin: 0 14px;
+    padding: 15px 0 15px 0; }
+  .is_event_index .footer{
+    width: 100%; }
+  .is_event_index .footer-copyright{
+    text-align: center;
+    margin: 0; }
+  .is_event_index .footer-sns{
+    float: right; }
+  .is_event_index .footer-sns__item:first-child{
+    padding: 0 0 0 220px; }
+	 .footer-link{
+    float: left;
+    padding: 0;
+    margin: 0;
+    text-align: left; }
+  .footer-link li{
+    margin: 0 30px 0 0; }
+  .no-touchevents .footer-link li a{
+    opacity: 1;
+    -webkit-transition: opacity 300ms ease;
+    transition: opacity 300ms ease; }
+  .no-touchevents .footer-link li a:hover{
+    opacity: 0.7; }
+  .footer-link__text{
+    font-size: 12px; }
+	.l-pagecontent{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 720px; }
+  .l-pagecontent:before{
+    content: "";
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    width: 73%;
+    height: 100%;
+    background: rgba(230, 0, 18, 0.85);
+    z-index: 2; }
+	
+	.pagecontent-content{
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    width: 73%;
+    height: 100%;
+    z-index: 10; }
+  .pagecontent-content:after{
+    content: "";
+    width: 1px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle; }
+  .pagecontent-main{
+    width: 99%;
+    display: inline-block;
+    vertical-align: middle; }
+  .pagecontent-foot{
+    margin: 0;
+    position: absolute;
+    left: 50px;
+    bottom: 50px; }
+	
+	
+	
+   }
+
+@media screen and (min-width: 1200px){
+  }
+
+@media screen and (min-width: 1366px){
+	 .l-footer-event{
+    right: 50px; }
+  .footer{
+    width: 194px; }
+  .footer-copyright{
+    line-height: 20px;
+    margin: 0;
+    text-align: left; }
+  .footer-sns{
+    border-left: #fff 1px solid;
+    float: right; }
+  .footer-sns__item:first-child{
+    padding: 0 0 0 25px; }
+  .is_event_index .footer-sns{
+    border-left: none; }
+  .is_event_index .footer-sns__item:first-child{
+    padding: 0 0 0 220px; }
+  }
+
+@media screen and (min-width: 1440px){
+   }
+
+@media screen and (min-width: 1600px){
+ }
+
+@media screen and (min-width: 1760px){
+ }
