@@ -1,0 +1,30 @@
+{
+  "name": "sass",
+  "description": "no",
+  "main": "gulpfile.js",
+  "authors": [
+    "me"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "sass"
+  ],
+  "homepage": "https://github.com/sexfat/cd102",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.3.1",
+    "wow": "^1.1.2",
+    "gsap": "^2.0.1",
+    "bootstrap-sass": "^3.3.6",
+    "animate-sass": "^0.6.4",
+    "scrollmagic": "^2.0.5"
+  }
+}
