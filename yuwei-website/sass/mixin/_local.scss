@@ -334,7 +334,7 @@ html[data-browser="game"] .local-gallery__subheadline:before {
 @media screen and (min-width: 980px), print {
   .local-gallery__subheadline {
     width: 282px;
-    background-image: url("../img/02-gallery/subheadline-pc.png");
+    background-image: url("../../images/02-gallery/subheadline-pc.png");
   }
   .local-gallery__subheadline:before {
     content: '';
@@ -4012,7 +4012,7 @@ html[data-browser="game"] .local-portable__pic:after {
     background-size: 1372px 410px;
   }
   html:not([data-browser="game"]) .local-software {
-    background-image: url("../img/07-software/soft_bg.jpg");
+    background-image: url("../../img/07-software/soft_bg.jpg");
   }
   html[data-browser="game"] .local-software {
     padding-top: 25%;

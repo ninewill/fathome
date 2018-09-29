@@ -1743,9 +1743,6 @@ html[data-nofixed="1"] [data-njs="sticky__inner"] {
     display: block;
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: opacity 100ms cubic-bezier(.445, .05, .55, .95), visibility 100ms cubic-bezier(.445, .05, .55, .95);
-    -moz-transition: opacity 100ms cubic-bezier(.445, .05, .55, .95), visibility 100ms cubic-bezier(.445, .05, .55, .95);
-    -o-transition: opacity 100ms cubic-bezier(.445, .05, .55, .95), visibility 100ms cubic-bezier(.445, .05, .55, .95);
     transition: opacity 100ms cubic-bezier(.445, .05, .55, .95), visibility 100ms cubic-bezier(.445, .05, .55, .95);
     pointer-events: none;
 }
@@ -1816,13 +1813,7 @@ html[data-nofixed="1"] [data-njs="sticky__inner"] {
 
 [data-effect="wipe"] [data-njs="switcher__content"].js-active {
     z-index: 1;
-    -webkit-transition: width 800ms cubic-bezier(.455, .03, .515, .955);
-    -moz-transition: width 800ms cubic-bezier(.455, .03, .515, .955);
-    -o-transition: width 800ms cubic-bezier(.455, .03, .515, .955);
     transition: width 800ms cubic-bezier(.455, .03, .515, .955);
-    -webkit-transition-delay: 0s;
-    -moz-transition-delay: 0s;
-    -o-transition-delay: 0s;
     transition-delay: 0s;
     width: 100%
 }
